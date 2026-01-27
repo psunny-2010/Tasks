@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY HTML Portfolio</title>
+    <style>
+        *{
+            font-family: sans-serif;
+          
+        }
+        body{
+            margin:0px 30px;
+        }
+        hr{
+            height: 1px;
+            background-color: #E5E5E5;
+           border: none;
+           width: 100%;
+        }
+        .navbar>nav>ul{
+               display: flex;
+           list-style-type: none;
+             justify-content: center;
+        }
+        .navbar nav ul a {
+            padding: 10px 18px;
+            color: rgb(63, 66, 230);
+            font-weight: bolder;
+            font-size: 15px;
+        }
+       .section-1 p{
+        padding: 10px 0px;
+       }
+       .features{
+        display:flex;
+        justify-content: space-between;
+       }
+       .items-features{
+       width: 70%;
+       }
+       .image-keyfeatures{
+        width: 30%;
+        padding-bottom: 5px;
+       }
+       .image-keyfeatures>img{
+        height: 230px;
+        width:420px ;
+       
+       }
+       .features>ul{
+        padding: 10px;
+        list-style-type: disc;
+       }
+     .Topics{
+        display: flex;
+        justify-content: space-between;
+    }
+    .section-2{
+        padding: 10px 0px;
+    }
+    .topics-list{
+        width: 65%;
+    }
+    .topics-list h2{
+       
+        margin-top: 15px;
+    }
+    .topics-list ol {
+        margin: 10px;
+        padding: 20px 0px 10px 0px;
+    }
+    .topics-list ol li{
+        line-height: 35px;
+    }
+    .topics-list>ul>li{
+          padding:10px 0px;
+    }
+    .topics-content{
+        width: 35%;
+    }
+    table{
+        width: 500px;
+        height: 260px;
+        border: 1px solid #f2f2f2;;
+       margin-top: 15px;
+       
+    }
+    td,th{
+        border: solid 1px black;
+    }
+     input[type="text"]{
+    width: 450px;
+  }
+  input[type="email"]{
+    width: 453px;
+  }
+  textarea{
+    width: 550px;
+    height: 100px;
+  }
+  button{
+    width: 100px;
+    padding: 5px;
+  }
+  .footer-style>ul{
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+  }
+   .footer-style>ul>li{
+    padding: 10px;
+   }
+ tr:nth-child(even) {
+    background-color: #f2f2f2;
+    height: 10px; 
+}
+tr:nth-child(odd) {
+    background-color:white;
+    height: 15px;
+}
+</style>
+</head>
+<body>
+    <header>
+     <div class="navbar">
+           <h1 style="text-align: center; padding: 20px 0px 10px 0px;">My HTML Portfolio</h1>
+        <hr>
+      <nav>
+          <ul>
+            <a href="#" ><li>Home</li></a>
+            <a href="#features" target="_self" id="features-click"> <li>Features</li></a>
+            <a href="#demo" id="demo-click"><li>Demo</li></a>
+            <a href="#contact"> <li>Contact</li></a>
+        </ul>
+        <hr>
+      </nav>
+     </div>
+    </header>
+    <main>
+         
+       <section class="section-1">
+        <h2 style="padding:15px 0px 15px 0px;">About HTML</h2>
+        <hr>
+        <p>HTML stands for Hyper Text Markup Language.It is the standard tag used to create webpages</p>
+        
+        <div class="features" id="features">
+        <div class="items-features">
+             <h2>Key Features Of HTML</h2> <hr>
+        <ul>
+            <li>Easy to learn</li>
+            <li>Semantic structure</li>
+            <li>Multimedia support</li>
+            <li>Forms and tables</li>
+        </ul>
+        </div>
+        <div class="image-keyfeatures">
+             <img src="https://t4.ftcdn.net/jpg/03/28/22/35/360_F_328223572_kb0e4sJKZjaCNWVjarTpQGaK2L6IRdt2.jpg" alt="Laptop and Coffee">
+             <figcaption><em><strong>Laptop and Coffee</strong></em></figcaption>
+        </div>
+         </div>
+       </section>
+       <section class="section-2">
+             <h2>HTML Topics Covered</h2>
+        <hr>
+       <div class="Topics">
+  <div class="topics-list">
+         <ol>
+            <li>Headings & Sections</li>
+            <li>Lists & Tables</li>
+            <li>Forms & Inputs</li>
+            <li>Media Embeds</li>
+        </ol>
+         <h2>Resources</h2>
+            <hr>
+            <ul>
+                <li>
+                    <h3><a href="#">MDN Web Docs</a> - HTML Guide</h3>
+                    <p>Comprehensive HTML reference</p>
+                </li>
+                <li>
+                     <h3><a href="#">W3Schools</a> - HTML Tutorial</h3>
+                    <p><i>Learn HTML</i> basics</p>
+                </li>
+            </ul>
+       </div>
+      <div class="topics-content" >
+          <table>
+            
+                <tr>
+                    <th colspan="3" style="text-align: left; background-color: #f2f2f2; padding: 0px 10px;">Project Timeline</th>
+                </tr>
+                <tr>
+                    <th style="width: 90px;">Phase</th>
+                    <th style="width: 250px;">Tasks</th>
+                    <th style="width: 130px;">Duration</th>
+                </tr>
+                 <tr>
+                    <td style="width: 90px;">Planning</td>
+                    <td style="width: 250px;">Research & Outline</td>
+                    <td style="width: 130px;"> 1 Week</td>
+                 </tr>
+                 <tr>
+                    <td style="width: 130px;">Development</td>
+                    <td style="width: 240px;">Coding Content</td>
+                    <td style="width: 130px;">2 Weeks</td>
+                 </tr>
+                 <tr>
+                    <td style="width: 130px;">Review</td>
+                    <td style="width: 240px;">Testing & Fixes</td>
+                    <td style="width: 130px;">3 Days</td>
+                 </tr>           
+        </table>
+       </div>   
+        </div>
+       </section>
+       <section>
+     
+       </section>
+       <section>
+        <div class="demo" id="demo1">
+            <h2>Demo Video</h2> <hr>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/it1rTvBcfRg?si=0d5PITXJhoJ_vAl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+       </section>
+       <section>
+        <div class="Contact" id="contact">
+            <h2>Contact Me</h2> <hr>
+            <form action="">
+                <label for="name">Name  :</label>
+                <input type="text" name="name" id="name"> <br> <br>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email"> <br> <br>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message"></textarea> <br> <br>
+                <input type="checkbox" name="subscribe" id="subscribe">
+                <label for="subscribe">Subscribe to newsletter?</label>
+                <input type="radio" name="yesorno" id="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" name="yesorno" id="no">
+                <label for="no">No</label> <br> <br>
+                <label for="">Preferred Contact :</label>
+                <input type="checkbox" name="email" id="pf-mail">
+                <label for="pf-mail">Email</label>
+                 <input type="checkbox" name="phonenuber" id="pf-number">
+                <label for="pf-number">Phone</label> <br> <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+       </section>
+    </main>
+    <footer>
+        <hr>
+     <div class="footer-style">
+           <ul>
+            <li><p>&copy; 2024 <strong>My HTML Portfolio</strong></p></li>
+            <li><p>| <a href="mailto:#">contact@example.com</a> |</p></li>
+            <li><p>Location:Anytown ,USA</p></li>
+        </ul>
+     </div>
+    </footer>
+    <!-- <script>
+       document.getElementById("demo-click").addEventListener("click",function(event){
+       
+        borderdemo();
+       });
+       function borderdemo(){
+        const a = document.getElementById("demo");
+        a.scrollIntoView({ 
+        behavior: "smooth", // The animation style
+        block: "start"      // Align the top of the div to the top of the screen
+        });
+        document.getElementById("demo").style.border="1px solid black";
+       }
+       document.getElementById("features-click").addEventListener("click",function(event){
+    
+      borderfeatures();}
+       );
+       function borderfeatures(){
+         const a = document.getElementById("features");
+        a.scrollIntoView({ 
+        behavior: "smooth", // The animation style
+        block: "start"      // Align the top of the div to the top of the screen
+        });
+         document.getElementById("features").style.border="1px solid black";
+       }
+
+       
+    </script> -->
+</body>
+</html>
