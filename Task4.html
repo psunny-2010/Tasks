@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4(Interactive Workspace map)</title>
+    <style>
+        #items-display{
+            width: 650px;
+            height:400px ;
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+            border: 1px solid black;
+            background: url(./media/Gemini_Generated_Image_tf8vpetf8vpetf8v.png);
+            background-position-y:45% ;
+            background-size:cover;
+            align-items: center;
+        }
+        #rectangle{
+            height:170px ;
+            width: 135px;
+            border-radius: 15px;
+        }
+        #polygon{
+           width: 140px;
+           height: 120px;
+           clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+        }
+        #circle
+        {
+            height: 140px;
+            width: 140px;
+            border-radius: 50%;
+        }
+        img{
+            height:200px ;
+            width: 250px;
+        }
+        .icon>img {
+            height: 40px;
+            width:40px;
+        }
+        .icon{
+            display: flex;
+            align-items: center;
+        }
+        #Laptop , #Coffee ,#Notebook{
+            margin: 50px 0px ;
+        }
+        hr{margin-top: 15px;}
+        
+    </style>
+</head>
+<body>
+    <h1 id="Top">Interactive Workspace Map</h1>
+    <p>Click on the <b>Laptop</b>, the <b>Coffee Cup</b>, or the <b> Notebook</b> below to jump to their specific Details</p>
+    <div id="items-display">
+       <a href="#laptop"><div id="rectangle" class="shapes"></div></a>
+     <a href="#Notebook"><div id="polygon" class="shapes"></div></a> 
+      <a href="#Coffee"> <div id="circle" class="shapes"></div></a>
+    </div>
+    <hr>
+    <div id="Laptop">
+        <div class="icon">
+       <img src="https://icon2.cleanpng.com/20231227/vue/transparent-laptop-laptop-computer-black-screen-white-keyboard-minimalistic-style-drawing-of-laptop-on-black-1710954581652.webp" alt="laptop icon"> <h2>Laptop Details</h2>
+        
+         </div><p id="rec">You clicked the rectangular area on the left!</p>
+        <ul>
+            <li>Model:Techbook Pro 2026</li>
+            <li>Screen:14 inch</li>
+            <li>CPU: 12-Core</li>
+        </ul>
+        <a href="#Top">^Go back to Map</a>
+    </div>
+    <div id="Notebook">
+           <div class="icon">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLAQyiKf7OD7t31AQ_JjSB_amvo8wqM9SPtg&s" alt="note book icon">
+         <h2>Notebook Details</h2>
+         </div>
+        <p id="tri">You clicked the triangular polygon shape in middle!</p>
+        <ul>
+            <li>Type: Spiral bound</li>
+            <li>Pages: 120(ruled)</li>
+            <li>Status: Fullof HTML notes</li>
+        </ul>
+        <a href="#Top">^Go back to Map</a>
+    </div>
+    <div id="Coffee">
+          <div class="icon">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQDxAPDw8PEBAVFQ8PEBUNDw8WDxAPFREWFhUVFRUYHCggGBolGxUVITEhJiktLi4uFx8zODMtNygtLisBCgoKDg0NFxAQGy0iHSUtLS0tLi0vMCsrKys3Ky0rLSsrKy0tLS0tLS0rKystLTcrLS0tKzc3KystMistNys3Lf/AABEIANwA5QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAgYDBAUBBwj/xABQEAABAwIBBwcFCgsGBwEAAAABAAIDBBEFBhIhMUFRcSIyYYGRobEHE3LB0RQWM0JSU2JzkpMXI1RjZIKissLS4kNEVXSD4TSUlaPT8PEk/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECBAP/xAAhEQEAAgICAgMBAQAAAAAAAAAAAQITUQMRMUEEFCEiEv/aAAwDAQACEQMRAD8A+4oiICIiAiIgIiICIiAiIgIsMkttAUBK5Ym8RLX+ZbKLAJSNYWZrr6lYtEpMdPURFpBERAREQEREBERAREQEREBERAREQEREBERAREQEREGpINJW00aNCjIy6xMeW6CvKP5n9b8w2FDMtpCkCvV6ddsCIioIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgKErLhTXjzoKk+Fhggdpstha0AubrZWePwtvIiItsiIiAiIgIiICIiAiIgIiICIiAiIgLxzgNZtxWvV1OYOnXwXHlri46+1B2n1bRvPBYH4gNlu1cfzt9Zusc9dFGLySMjH03Nb4oOu7EDv7B7VA1jjtd3KrVOWuHR86rjP1Ye/wDcBWi/yk4eOa6Z/owuA/asszese24pafS7iocfldqmHn/0qjR+UilPNhnPHMHrWy3L+M6qd/W9qmSuzHbS4XO5QlcdVlVPf4NlN2y/0qHv6sb+5gf9b+lZtyVn87WOOy4MBA1KVzuVP9/p/JR99/Qnv8/Rv+9/SrHJWEx2W/OO7vUTK4b+0qpHL1u2nd1SD2LDL5RYBzqebqLD61cldmO2lx91OHyu1SFc7eesBUX8JlF8ZlQ39Rp8Cs8PlCw12jz7mH85DMO8NI70yV2Y7aXduIb7dhCzMrmnZ2EFValyio5fg6qB3QJG37Ct7zg1rUT2zMTCxMmadRHrWRVoVBG3tW/RYhfQdPQfUqjrIvGm4uF6gIiICIiAiIgIiIOFitVmTFrhdha09I2epc+qp3ZjnwWkIBLWFwBJ2C51LZykb+Nad7fAlc6EOvyb36NaD5nlLX41dwmiqKePdTxv83b61t79qpkhJJLiS7bnXLr9N1+imVcg0HT6QWKop6aYWnpYJPTijd4hc9uCZ9uivPEen55UmlfdJskMKk10bGfV57e5pstOXydYW7miVnozO8HLzn49np9ir5LSzWXXp6pXt3kvojzZ6lvB8R8WIPJjAObVz9bIz4WSOG8E8tJVBlSsgnCto8mrdlZJ1wt/mXv4Nx+WO+4H86uO+kyU2qXnwoOqArh+Df8ATHf8uP514fJsPyx/3A/mTHfSZKbUiWqXMq6i6+kHyZxfGrJeqNg9a8/BdS/Gqqk8PMj+EqTxXlqOWj5JK66wr7LH5M8OHOfUO4ytHgAtuLIPCmf2Dn+nJKfWp9exnq+HldHB6qsYR7kdUX2NgEjgT6IBB7F9sp8Bw6LTHQwX3uia53a65XQFVmi0bGMH0QPUt1+PMe2Z+RGlayQdiczSK2n80ALtkfZj3dDo9YPTo4KymVkQNjnv7gtaad7tbjw2LWcumsdR05rT3Pa5YeSYoydZaCevSthYqRto2Dc1o7gsqqCIiAiIgIiICIiCs5ZzGPzLw3PBL2FoIzzoBGZfQTr5O3ZuPLwbEYpnfipGuI5L26pI3WvmvYeU09BCseVFM2Sns9oc3OFw4XBB0Kg1GAv84yRhZNmnkipLmzxt0aI6pnLA0anB3FBdAvfNNOwKsmpqIec+ojG6phFRH97Cc4Dis1NlDI7mspZ9/uera1/2JQLdqDr20qbVXffOWgmagxCIXOkQCUcbxOdfqQ5c4c3RJNJCf0ilq4wOJdGB3oLO0LI0KvRZZYY61sQpOudgPYSujBj1G/m1dM7hNH7UHUaFMBaTMTpzqqIOqaP2rM3EIfnofvWe1BsEKBCga+H56L7xntWJ2IwfPw/ex+1BlcFicFgkxamGuppx/rR+1c+fKrD2c+vpG8Z4/ag6bgsblwpsusLabe7oXndDnyE8BGCSoe++ncbRQ1019Xm6GpAPW9rQg7jljcq9V5TztGjDpY/pVtTSQMtvILy+3BpXHdlVPMc2OppAb6W4dT1NbIOjzgDY2njZBdHm2k6B0rltxaORwZCRIC4MMg+AaSbWDxz3a+S2/TZcGPCamo+GjkcNWfi0zHNPSKOC0f2iDvCsuE4W2N7XOe6WTVnSZoDG682NjbNjHAXO0lBeW1seq57Cs7Hh2kEHguECs0Upabj/AOoOyijG/OAI26VJAREQEREBERBrYjFnwyN+iSOI0jwVRaVdyqZUx5kj2bnEDhfR3IOjE64BWOooopfhYo5PTY0ntKhRv5Nty2gUFUORlAHF0cL4HadNJPPDp32jcApNyWLR+KxHE4+NQyQD7xjj3runWeJUmlBXTktUHXicsn+Yo6GTxjWrJkdUn+84c4fncHpie1pareCphyCkOyElOsYK/wBPCCP3ZVH3hS/MYAeOGTjwmV8Dl7nIKCMgpfyfJ/8A6dUf+VSGQUnzWBN6W4VIT3zK+5y8LkFGGRNQObLhLfRwaP8AikK2Ysk6ga62Fn+XwyhYeq7SrcXKBcgrUeTM40OxavI3RikjH7MeheHI+nN/Oz1899Ymr6nN+yxzR3KxkrGSg4lNkph8Ruyip875To2uceJde66gaGizQABqDQAB1BTcVBxQQcujk9FeUu+S3vOj2rmuKsGTkVo3P+Ue5ujxug6M0DXCxA47QuNqNupd5cCZ3LdxPig6uHOuzgSPX61tLSwrmu4+oLdQEREBERAREQFW8ooc2QP2OGn0h/tZWRaGNU/nIXW1t5Y6tfddBXaN9nW36F0AVx2usupE+4BQYJtDivAUqtYO9Yw5BnDlMOWuHKQcgzhy9zlhzkzkGfOXmcsWcvM5BkLlEuUC5RLkEy5QJUS5QLkHpKgShcsZKD0q30wbFG1hc0WABuRr296qEY0rZBQd2sxMWLY9J37BwXMBWAFdCgoi8guFmdO3gg6WGstGOm7ltIAiAiIgIiIC8JUXOXJr8bjjuG8t25uocSg6xetSpxCNnOe0dF9PYqtVYrLJ8bNG5mjv1rSQbkzmlzszm3NrjYs9FJY5vWOK50brFbAKDfqhdt92lagctyJ4e3uK0HixIQZQ5SDlgDl7nIM+cvc5YM5e5yDNnLzOWLOXmcgy5y8LljzlEuQZC5RLlC68QekrxFGR1gg6OHTU4bmyc6+s3tboIXWho6d2lukfRfcKoKccjmm7XFp+iSEF4hpIm6mDr0+K2VU6PHnt0SDPG8aHewqwUVeyUXY6+8HWOIQbqKIKkgIiICxSyBoJJsBpN9gU3FV7KaqIDYx8a5dwGodvgg0sVxh0hLWEtZ+07j0LlIvbIPF6vQ1SDUELLNG7YvM1YnybkG7DJmm+zas1W29njgVoQzB2jatqGW3JPNPcgxIpPbY2UUBERAREQEREBEXjiALnQEHpKwPNyoPnudGrxWRjroILxZS1RLUEFOOQtIc0kEaiNajZeILTg2L+c5D7B+zc7/ddppXz5jy0hwNiCCD0q70FRnsa/eAevag3EQIghIVWMo4yS1+wXafEetWeQaFyK9o0hwu06CPWOlBVgFIBZ6mlLDrzmHmuGo9HQehYwEABSAXoCkAg8LdC0ntsuiAvJIQ5BWsQlc3S0kEarLFQZWRh3m6n8WdQk+IfS+SenVwXWrsOJGgX4KqYrgl76EF6Y8OALSHNOkFpBBHQV6vmNE2rpD/+eRwbtY7lRn9U6uqysVFli7VUU7m/ShNwf1TpHaUFsRcunyipH6pg07pA5viLLdZWxO1Sxng9vtQZ0WI1MfzjPtt9q15sXpmc6eIfrgnsCDdRcCqytp2/BiSY/QYWjtdZcCvyirp7tiaKdp+RypLekRo6ggtuLY3BSj8a/lnmsZYyO6tg6SuHFjElQ65Gaz4rRs4naVXqPA3F2e8lzjpJcSXE9JKteGYWRawQdGn1LbgZpupwUdta2c0DUgxFqgQsxCgQgxEKBCykKBQQVxwpmZGxp1gAHjtXBoaTNIe/na2NOvoc7dwVio26EG8EQIg8cFpVcVwt9Y3tugp2IxzREvhzXfLjk+Dlb/C7c5alFW09Qc2N3mZhodDUENdnbmO1O8VbaqluqxjmTsc45TbO2ObocOvaglJE5hs5paekIFXvP4nRclrvdcA+JK3OsOB5Q6is1JlnRv0VEMtM/UTGfOR34EBw4IO8FMLDSVFPN/w9VBL0Z+a/ra7SFsvpZG85jh1XHcgjZQfTtOsBehykHINGXCI3fFHUtOXJ2M7wu4HKQcgrD8l2b+4LCclG9H2Vbs5LhBUPem3o+yptyVbv7lbbheXQVuPJlg39gW1FgUY2X4ldnOXhcg04qBjdTR2LYDAFIuUS5AKgVIAnUCeAWT3HJbOcAxu0yENA7UGuVArXq8YoYfhKtr3fJpml54Zw0Bcp2WDnnMoKO7vlznPd9kclvagsDaZxaXmzGDSXykNYBxK0mYo1z/N0TfOvGh08rfxEfoN+M7itCHBamqcH10z37RGDyR2aB1DrVtw3DGsaGtaGtGoAaEHuF0hA0lznHS5zzdznHWSu7AyyxwQ2W00IJBERAREQQcxa0tOCtxeEIOJUUAOxcLE8nYpefG13TbldutXVzFhfTgoPk1fkK3SYpHN3B4zgOvQVz20OLUvwE8paNQjmcW/YfoX2CSiB2LUlw4HYg+WnLbFodE0bJAPyim0fabbxWeLymDVLQRHeYpXt7iPWr/LhQ3Lm1WTcT+dFG70mNKCvx+UegPPpaxn1boXfvOC2o8vcKdrkqo/rIL/uEr2oyIpXf2DR6Bc3wK583k/pjqbI3g8+tB12ZZ4SdVa4enTzDxCyDKvC/wDEI+tknsVYk8nUOx8w62+xa7vJvH89N2R+xBcffThf+IQ9TX+xROVmFj+/tPCKQ+pU8eThnz0vYz2LKzycx/OzH7HsQWV+WuEj+9yu9Gmm9i1pcv8ADG6m1snoxxNH7TgVzYvJ7DtdKf1h7Fuw5BUw1xud6T3+ooMcvlHpB8HRTO+tlaO5t1pS+Ued2iCjpmH6YklPiFYqbI+mbqp4+ttz2ldamwRreaxrfRaAgohyhxqo0NMkY/NxNjFuJF14zJitnOdUzk+nI+R3foHavpUWFjctyKgA2IKLh2RULbF4dIfpnk9gVoosJawANaGjc0ABdyOkAWwyEINGCjA2LdjhsswavbIPAFJEQEREBERAREQF5Zeog8zVEsU0QYTEFA04WyiDSdSjcoGjG5b9ksg5pohuXnuAbl07LyyDme4BuXooRuXSslkGgKIblIUg3LeslkGq2mCmIAthEGIRhTDFJEHll6iICIiAiIgIiIP/2Q==" alt="Coffee Icon">
+         <h2>Coffee Details</h2>
+         </div>
+        <p id="cir">You clicked the circular area on the right!</p>
+        <ul>
+            <li>Roast: Dark French Roast</li>
+            <li>Temp: 180&deg;F</li>
+            <li>Sugar: None</li>
+        </ul>
+        <a href="#Top">^Go back to Map</a>
+    </div>
+    <script>
+      // Select all shapes using the class 'shapes'
+const shapes = document.querySelectorAll('.shapes');
+
+// Variable to keep track of the currently bordered container
+let activeContainer = null;
+
+shapes.forEach(shape => {
+    shape.addEventListener('click', (event) => {
+        const clickedId = event.target.id;
+        let targetContainerId = "";
+
+        // Map shape IDs to the Container IDs
+        if (clickedId === "rectangle") {
+            targetContainerId = "Laptop";
+        } else if (clickedId === "polygon") {
+            targetContainerId = "Notebook";
+        } else if (clickedId === "circle") {
+            targetContainerId = "Coffee";
+        }
+
+        const container = document.getElementById(targetContainerId);
+
+        if (container) {
+            // 1. Remove border from the previously active container
+            if (activeContainer) {
+                activeContainer.style.border = "none";
+                activeContainer.style.padding = "0px"; // Reset padding
+            }
+
+            // 2. Set the new border and some padding so it looks nice
+            container.style.border = "3px solid Red";
+            container.style.padding = "15px";
+            container.style.borderRadius = "10px";
+            container.style.transition = "all 0.3s ease";
+
+            // 3. Smooth scroll to the container
+            container.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+            // 4. Update the tracker
+            activeContainer = container;
+        }
+    });
+});
+    </script>
+</body>
+</html>
