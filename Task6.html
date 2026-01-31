@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #navigation{
+              background-color: rgb(32, 107, 101);
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+        }
+        nav{
+            width: 90%;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            height: 80px;
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: baseline;
+        }
+        nav ul li{
+             padding: 15px 10px;
+        }
+        nav ul a {
+            text-decoration: none;
+            color: white;
+        }
+        #Welcome{
+            height: 230px;
+            background-color: #f2f2f2;
+            display: block;
+            align-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        #Welcome button{
+           
+            color: white;
+            height: 40px;
+            width: 150px;
+            border-radius: 5px;
+            background-color: #007BFF;
+            font-size: 15px;
+            margin: 15px 0px 0px 0px;
+            cursor: pointer;
+            border: none;
+        }
+        hr{
+            margin: 0;
+            padding: 0;
+            height: 2px;
+            background-color: #007BFF;
+        }
+        #tablesection{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            border-bottom: solid 1px #867e7e;
+            padding: 20px 0 0 0;
+        }
+        .heading{
+            width: 90%;
+            height: 50px;
+            border-left: 3px solid #007BFF;
+            margin: 20px 5% 15px 5%;
+        }
+        .heading h2{
+            padding: 10px 0 0 5px;
+        }
+        
+        table{
+            width: 90%; 
+            margin: 0 5% 35px 5%;
+            border-collapse: collapse;
+            color: rgb(82, 80, 80);
+        }
+        table tr{
+            height: 60px;
+          
+        }
+        td{
+            padding: 0 0 0 10px;
+              border: solid  1px #867e7ec8;
+            width: 20%;
+        }
+        td:nth-child(2), td:nth-child(4), td:nth-child(6), td:nth-child(8), td:nth-child(10) {
+            width: 40%;
+        }
+        tr:nth-child(1){
+            background-color:rgb(8, 55, 51) ;
+            color: white;
+        }
+         tr:nth-child(4){
+            background-color:#c19c2f;
+        }
+        #formsection{
+             display: block;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0 0 0;
+         
+        }
+        #inputform{
+          
+           width: 90%;
+           height: auto;
+           margin: 0 5% 35px 5%;
+           background-color: #f2f2f2;
+           display: block;
+           justify-content: center;
+           padding: 20px 0px;
+        
+        }
+        #firstform{
+             width: 96%;  
+            margin: 0 2%;
+          
+            height: 250px;
+        }
+        #secondform{
+            width: 96%;  
+           height: 150px;
+         margin:  2%;
+        
+        }
+       #firstform fieldset{
+            background-color: white;
+            border-radius: 5px;
+            padding-top: 20px;
+            margin-top: 10px;
+        }
+         #secondform fieldset{
+            background-color: white;
+            border-radius: 5px;
+            margin-top: 40px;
+            padding-top: 20px;
+            padding-bottom: 15px;
+        }
+          input {
+            height: 30px;
+            width: 99.5%;
+            margin: 10px 0;
+            border: 1px solid #9CA3AF;
+            border-radius: 3px;
+        }
+        select{
+             height: 40px;
+            width: 100%;
+            margin: 10px 0;
+            border: 1px solid #9CA3AF;
+            border-radius: 3px;
+            margin-bottom: 25px;
+        }
+        legend{
+            color: #007BFF;
+        }
+        input::placeholder{
+            color:#9CA3AF;
+            padding: 0 6px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+      <div id="navigation">
+          <nav>
+            <h1>TechNova Logo</h1>
+            <ul>
+                <a href="#"><li>Schedule</li></a>
+                <a href="#"><li>Register</li></a>
+                <a href="#"><li>Location</li></a>
+            </ul>
+        </nav>
+      </div>
+      <div id="Welcome">
+        <h1>Welcome To TechNova 2024</h1>
+        <p><strong>Date:</strong>October 12-14,2024 | <strong>Location:</strong> The Grand Innovation Centre, Seattle </p>
+       <p>Join the world's leading minds in AI, Frontend, and Backend development.</p>
+        <button>Get Tickets Now</button>
+      </div>
+      <hr>
+    </header>
+    <main>
+        <section id="tablesection">
+            <div class="heading">
+                <h2>Conference Schedule</h2>
+            </div>
+            <table border="1">
+                <tr>
+                    <td>Time</td>
+                    <td>Topic</td>
+                    <td>Speaker</td>
+                    <td>Location</td>
+                </tr>
+                <tr>
+                    <td>09:00 AM</td>
+                    <td>Keynote: The Future Of Code</td>
+                    <td>Dr. Smith</td>
+                    <td>Main Hall</td>
+                </tr>
+                <tr>
+                    <td>10:30 AM</td>
+                    <td>Advanced CSS Grid</td>
+                    <td>Jane Doe</td>
+                    <td>Room A</td>
+                </tr>
+                <tr>
+                    <td>12:00PM</td>
+                    <td colspan="3"><b>Networking Lunch Break (Catered)</b></td>
+                </tr>
+                <tr>
+                 <td>01:00 PM</td>
+                 <td>AI Integration</td>
+                 <td>John Bot</td>
+                 <td>Room B</td>
+                </tr>
+                <tr><td colspan="4"><i>*Schedule subject to change</i></td></tr>
+            </table>
+        </section>
+        <section id="formsection">
+                <div class="heading">
+                <h2>Register for Tickets</h2>
+                </div>
+                <div id="inputform">
+                     <form action="get" id="firstform">
+                        <fieldset>
+                            <legend>Personal Detils</legend>
+                        <label for="username"><b>Full Name:</b></label> <br>
+                        <input type="text" id="username"> <br>
+                         <label for="useremail"><b>Email Address:</b></label> <br>
+                        <input type="email" id="useremail" placeholder="you@example.com"> <br>
+                         <label for="userlinkedin"><b>LinkedIn Profile URL:</b></label> <br>
+                        <input type="url" id="userlinkedin" placeholder="https://linkedin.com/in/...">
+                        </fieldset>
+                     </form>
+                     <form action="get" id="secondform">
+                         <fieldset>
+                            <legend>Ticket preferences</legend>
+                         <label for="size"><b>T-Shirt Size:</b></label> <br>
+                         <select name="size" id="size"> <br>
+                             <option value="small">Small</option>
+                             <option value="medium" selected>Medium</option>
+                             <option value="large">Large</option>
+                             <option value="x-large">XX-Large</option>
+                         </select>  <br>
+                         <label for=""><b>Dietary Restrictions:</b></label>
+                         </fieldset>
+                     </form>
+                </div>
+
+        </section>
+    </main>
+</body>
+</html>
