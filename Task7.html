@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+    <style>
+        body{
+            font-family: sans-serif,Arial, Helvetica;
+            background-color:  #f2f2f2;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #mainbox{
+            width: 100%;
+           
+        }
+        #centrebox{
+            width: 80%;
+             margin: 5% 10% 3% 10%;
+            height: 500px;
+            box-sizing: border-box;
+            background-color: white;
+            padding:30px 25px;
+        
+
+        }
+        #firstbox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+           
+        }
+        #secondbox{
+            display: flex;
+               align-items: center;
+              justify-content: center;
+             gap: 15px;
+        }
+        #firstbox img{
+
+            height: 200px;
+            width: 300px;
+        }
+ .main-container{
+    display: flex;
+   justify-content:space-evenly; 
+   
+}
+.first-container{
+    width: 540px;
+    height: auto; 
+    border-radius: 15px;
+    background-color: white;
+}
+
+fieldset{
+    width: 540px;
+    margin-top: 15px; 
+    box-sizing: border-box;
+    line-height: 10px;
+    border: none;
+}
+fieldset.forms{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.group{
+    display: flex;flex-direction: column;
+
+}
+.feedbackLegend{
+   height: 40px;
+   width: 250px;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: auto;
+    font-weight: bolder;
+    color: brown;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 30px;
+}
+label{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    float: left;
+    padding: 10px;
+}
+input[type="text"], input[type="email"]{
+   border: #c0b4b4 solid 1px;
+   height: 30px;
+   width: 95%;
+   margin: 0 2.5%;
+   border-radius: 5px;
+}
+textarea{
+    resize: none;
+    height: 80px;
+    width: 95%;
+      margin: 0 2.5%;
+     border:  #c0b4b4 solid 1px;
+      border-radius: 5px;
+
+}
+#ageandrefer{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+   gap: 20px;
+      width: 95%;
+      margin: 0 2.5%;
+}
+input[type="number"]{
+ width: 35px;
+ height: 20px;
+  border: #f2f2f2 solid 1px;
+   border-radius: 5px;
+}
+#numbertype{
+    width: 25%;
+ display: flex;
+  align-items: center;
+ justify-content: center;
+}
+#radiotype{
+    width: 70%;
+ display: flex;
+  align-items: center;
+ justify-content: center;
+ gap: 5px;
+}
+#selecttype{
+ display: flex;
+ flex-direction: column;
+}
+select{
+       width: 95%;
+      margin: 0 2.5%;
+      height: 30px;
+       border: #c0b4b4 solid 1px;
+      border-radius: 5px;
+}
+button{
+    width:150px;
+    height: 30px;
+    margin: 0 35%;
+    color: black;
+    background-color: rgb(255, 255, 255);
+      border: #c0b4b4 solid 1px;
+    border-radius: 5px;
+}
+button:hover{
+    color: rgb(255, 255, 255);
+    background-color:black;
+}
+.main-container{
+   margin: 50px 0;
+}
+#second-container{
+    width: 540px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+}
+#secondcontainer-content{
+    height: 250px;
+    line-height: 35px;
+}
+table{
+    margin: 15px 5%;
+    border: solid 1px #9CA3AF;
+    border-collapse: collapse;
+    height: 250px;
+    width:90%;
+}
+tr,td,th{
+   border: solid 1px black;  
+}
+td{
+    padding-left: 10px;
+}
+tr:nth-child(1){
+  background-color: #c0b4b4;
+  color: black;
+  height: 50px; 
+}
+tr:nth-child(2),tr:nth-child(3),tr:nth-child(4){  
+  color: black;
+  height:50px;     
+}
+
+ul{
+    list-style-type: square;
+}
+ul li{
+    color: orangered;
+}
+ul li::marker{
+    color: maroon;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+}
+   input::placeholder{
+    box-sizing: border-box;
+            color:#9CA3AF;
+            padding: 0 6px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="mainbox">
+        <div id="centrebox">
+             <div id="firstbox">
+                <img src="https://images.unsplash.com/photo-1746292506342-9685d67d77cd?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="HTML image">
+                  <div class="content">
+                    <h1>Hyper Text Markup Language:</h1>
+                  <p><strong>HTML</strong>, or <strong>HyperText Markup Language</strong>, is the standard backbone of the World Wide Web, serving as the fundamental structure for every website you visit. <br>
+                     <em>It isn't a programming language in the traditional sense; rather, it is a markup language</em> that uses a system of tags to define elements like headings, paragraphs, images, and links. <br>
+                     By organizing content into a logical hierarchy, HTML tells web browsers how to display text and media, ensuring that information is accessible and readable across different devices.</p>
+                    
+                </ul>
+                  </div>                 
+             </div>
+             <div id="secondbox">
+                  <div class="content">
+                    <h1>Cascading Style Sheets (CSS):</h1>
+                  <p><strong>Cascading Style Sheets (CSS)</strong> provides the soul and visual identity of a webpage.  <br>
+                    CSS is a style-sheet language used to describe the presentation of a document written in HTML, allowing developers to control everything from layout and colors to fonts and animations.  <br>
+                    By separating the content (HTML) from the design (CSS), it allows for incredible flexibility; <br>
+                  <em> you can change the entire look of a website by simply editing one CSS file</em> without ever touching the underlying code. <br>
+                   This "cascading" nature means that styles can be applied globally and then refined locally, creating a consistent and professional aesthetic across hundreds of pages at once.</p>
+                  </div>
+                  <iframe width="400" height="200" src="https://www.youtube.com/embed/AGDDdsiZ0Ko?si=ow-aXXw0Y9hmUiEX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             </div>
+        </div>
+    </div>
+     <div class="main-container">
+    <Section class="first-container">
+       
+         <form action="get" >
+            <fieldset class="forms">                                                                                                       
+            <legend class="feedbackLegend">Feedback Form</legend>                                         
+             <div class="group">
+                 <label for="name">Name :</label>
+            <input type="text" id="name" size="20" required placeholder="Enter your Name ">
+             </div>
+             <div class="group">
+                <label for="phone-No">Phone Number:</label>
+             <input type="text" id="phone-No" size="20" required placeholder="Enter Your Phone Number">
+             </div>
+            <div class="group">
+                 <label for="emailId">Email-ID:</label>
+             <input type="email" id="emailId" minlength="3" maxlength="15" required placeholder="Enter Your Email-ID">
+            </div>
+             <div class="group">
+                <label for="address" >Address:</label>
+             <textarea name="address" id="address"  placeholder="Enter Your Address"></textarea>
+             </div>
+            <div id="ageandrefer">
+                 <div id="numbertype">
+                <label for="age">Age</label>
+             <input type="number" min="09" max="99" id="age">
+             </div>
+              <div id="radiotype">
+                <p>Do you refer this for others:</p><input type="radio" name="refer" id="yes"><label for="yes">Yes</label>
+             <input type="radio" name="refer" id="No"><label for="yes">No</label></p>
+             </div>
+            </div>
+             <div id="#selecttype">
+                <label for="choice">Feedback:</label>
+             <select name="choice" id="choice">
+                <option value="Bad">Bad</option>
+                <option value="Average">Average</option>                                                                
+                <option value="Good">Good</option>
+                <option value="Excellent" selected>Excellent</option>
+             </select>
+             </div>          
+             <div class="group">
+                <label for="comments">Comments:</label>
+             <textarea name="comments" id="comments" ></textarea>
+             </div>
+             <button type="submit">Submit</button>
+            </fieldset>
+         </form>
+    
+    </Section>
+    <Section id="second-container">
+      <div id="secondcontainer-content">
+          <h2>ABC Learning Platform</h2>
+        <ul>
+            <li>Contact us: <a href="#">+91-1234567890</a></li>
+            <li>Mail Us:<a href="#">abcd@gmail.com</a></li>
+            <li>Linked-In: <a href="https://www.linkedin.com/feed/">www.linkedin.com/....</a></li>
+            <li>Youtube: <a href="https://www.youtube.com/watch?v=AGDDdsiZ0Ko&list=PLP9IO4UYNF0UCaUSF3XNZ1U9f01E5h5PM">www.youtube.com/...</a></li>
+        </ul>
+        <p></p>
+      </div>
+      <table>
+        <tr>
+            <th>Feature </th>
+            <th>HTML</th>
+            <th>CSS</th>
+            <th>JavaScript</th>
+        </tr>
+        <tr>
+            <th>Purpose</th>
+            <td>Defines the content and structure of a webpage</td>
+            <td>Controls the visual presentation, styling, and layout of HTML</td>
+            <td>Enables dynamic behavior, interactivity</td>
+        </tr>
+        <tr>
+            <th>Type</th>
+            <td>Markup Language</td>
+            <td>Style Sheet Language</td>
+            <td>Programming Language</td>
+        </tr>
+        <tr>
+            <th>Extensions</th>
+            <td>.html</td>
+            <td>.css</td>
+            <td>.js</td>
+        </tr>
+      </table>
+        
+    </Section>
+    </div>
+</body>
+</html>
