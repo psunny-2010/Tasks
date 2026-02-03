@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task8</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        header
+        {
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 96%;
+            margin: 0 2%;
+            color: white;
+        }
+        nav h1{
+            font-size: 28px;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+          
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            margin:0px 20px;
+        }
+        #firstsection
+        {
+            width: 100%;
+            height: 280px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #firstsection button{
+            width: 150px;
+            height: 40px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 15px;
+            border: none;
+            margin:20px 0;
+        }
+        #secondsection{
+            width: 100%;
+            height: 210px;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            box-sizing: border-box;
+        }
+        .content
+        {
+            width: 230px;
+            height: 135px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            background-color: white;
+            box-sizing: border-box;
+        }
+        #footersection-1
+        {
+            width: auto;
+            height: 40px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            border: none;
+            margin: 0;
+            top: 0;
+        }
+         #footersection-2{
+            width: 100%;
+            height: 180px;
+            border: none;
+          background-color: #f2f2f2;    
+            }
+         </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>MyBrand</h1>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="firstsection">
+        <h1> Grow Your Bussiness</h1>
+        <p>Simple websites using HTML & Css</p>
+        <button>Get Started </button>
+    </section>
+    <section id="secondsection">
+        <div class="content">
+            <h2>Design</h2>
+            <p>Clean UI using basic CSS</p>
+        </div>
+        <div class="content">
+             <h2>Development</h2>
+            <p>Structured HTML Pages</p>
+        </div>
+        <div class="content">
+             <h2>Support</h2>
+            <p>Beginer friendly help</p>
+        </div>
+    </section>
+  <footer>
+        <div id="footersection-1"><p>&copy;2026 Mybrand</p></div>
+        <div id="footersection-2"></div>
+  </footer>
+</body>
+</html>
