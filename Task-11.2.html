@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-11.2(Pricing)</title>
+    <style>
+          *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          body{
+            background-color: rgb(245, 238, 224);
+            margin: 0;
+            padding: 0;
+          }
+          h1{
+              color: rgb(26, 15, 4);
+              font-size:25px ;
+              margin-left:50px ;
+              position: relative;
+              margin-top: 30px;
+          }
+          h1::after{
+               content: "";
+               position: absolute;
+               bottom: 12px;
+               left: 11.5%;
+             transform: translateX(-50%);
+             width: 120px;
+             height: 2.5px;
+              background-color: #f3b858;
+          }
+          p{
+               color:rgb(139, 134, 129) ;
+              font-size:15px ;
+              margin-left:50px ;
+          }
+       #plans{
+        display: flex;
+        justify-content: center;align-items: baseline;
+        width: 100%;
+        height: auto;
+        gap: 30px;
+       }
+       .plancards
+        {   margin-top: 30PX;
+            width:460px ;
+            height: 75vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .plancards p{
+            font-size: 15px;
+            margin-left: -15px;
+            line-height: 20px;
+        }
+    
+       .professional{
+          
+       background-color: rgb(245, 238, 224);
+       border: 1px solid rgb(247, 185, 71);
+       position: relative;
+         }
+         .recommended{
+            position: absolute;
+            top:-15px;
+            height: 30px;
+            width:120px ;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            background-color:orange ;
+         }
+        .recommended b{
+            color: white;
+            font-size: 13px;
+        }
+        .ratingicon{
+            height: 50px;
+            width: 50px;
+            border-radius: 6px;
+            background-color: rgb(251, 240, 220);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 35px;
+        }
+        .ratingicon img{
+            height: 30px;
+            width: 30px;
+        }
+        ul
+        {
+            list-style-type:none;
+            word-spacing: 3px;
+            line-height: 50px;
+            margin-left:-60px ;
+            margin-bottom: 0;
+        }
+        li{
+            color: rgb(50, 48, 45);
+            font-size: 15px;position: relative;
+        }
+          li::before {
+            content: "✓";
+             position: absolute;
+             left: -23px;
+              top:0px;
+              color: #f5aa28; 
+              font-weight: bold;
+              font-size: 18px;
+          }
+        button{
+        width: 120px;
+        height: 50px;
+        background-color:rgb(238, 192, 98) ;
+        color: white;
+        border:none ;
+        border-radius: 50px;
+        margin-top: 5px;
+        }
+        .professional button{
+            background-color: orange;
+        }
+        span{
+            display: inline;
+            letter-spacing: 2px;
+        }
+        b{
+          font-size: 40px;
+        }
+        sub{
+           font-size: 14px; 
+        }
+        sup{
+            font-size: 18px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>PRICING</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt animi delectus harum debitis.</p>
+    <div id="plans">
+        <div class="plancards">
+            <div class="ratingicon">
+              <img src="https://img.icons8.com/ios/50/FD7E14/star--v1.png" alt="star--v1"/>
+            </div>
+            <h2>Standard</h2>
+            <span><b><sup>$</sup>9</b><sub>/month</sub></span>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur <br>
+                adipisicing elit. Error natus tempore deserunt 
+            </p>      
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Adipisicing elit. Unde magnam</li>
+                <li> dignissimos repellendus eos.</li>
+            </ul>
+            <button>Buy Now</button>
+          </div>
+            
+        <div class="plancards professional">
+          <div class="recommended"><b>Recommended</b></div>
+              <div class="ratingicon">
+               <img src="https://img.icons8.com/material-sharp/24/FD7E14/multiple-stars.png" alt="multiple-stars"/>
+            </div>
+            <h2>Professional</h2>
+           <span> <b><sup>$</sup>29</b><sub>/month</sub></span>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur <br>
+                natus tempore deserunt 
+            </p>      
+            <ul>
+                <li>Sit amet consectetur.</li>
+                <li>Elit Unde magnam</li>
+                <li>Dignissimos repellendus eos.</li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+        <div class="plancards">
+              <div class="ratingicon">
+              <img src="https://img.icons8.com/ios-glyphs/30/FD7E14/star--v1.png" alt="star--v1"/>
+            </div>
+             <h2>Ultimate</h2>
+          <span>
+              <b><sup>$</sup>49</b><sub>/month</sub>
+          </span>
+            <p>
+            Amet consectetur adipisicing elit. Error  <br>
+            natus tempore deserunt 
+            </p>      
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Adipisicing elit magnam</li>
+                <li>dignissimos repellendus eos.</li>
+            </ul>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
