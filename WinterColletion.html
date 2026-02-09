@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Collection</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(135deg, rgb(250, 251, 252) 0%, rgb(232, 244, 248) 100%);
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            z-index: 2;
+        }
+        nav{
+            width: 90%;
+            display: flex;
+            gap: 25px;
+            justify-content: space-between;
+            align-items: center;
+            color: #4a5f6d;
+            font-weight: lighter;
+        }
+        nav h1 span{
+            margin-right: 15px;
+        }
+        ul{
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+        }
+        li a {
+            text-decoration: none;
+            color:#4a5f6d ;
+            font-size: 20px;
+        }
+        main{
+           width: 100%;
+           height: 82vh;
+          position: relative;
+         
+        }
+        @keyframes bg-img{
+            0%,30%{
+                background: url(https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=1600&q=80); background-position: center 30%;}
+            35%,60%{background: url(https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=1600&q=80);
+            background-position: center 50%;}
+            65%,100%{background: url(https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=1600&q=80);background-position: center;}
+        }
+        main h1{
+         color: #2c3e50;
+         font-size: 65px;
+         font-family:cursive;
+         font-weight: lighter;
+        }
+        main p{
+            color: #7ba8bd;
+            font-size: 30px;
+            
+        }
+        .heading{
+             background: linear-gradient(rgba(250, 251, 252, 0.792), rgba(232, 244, 248, 0.874));
+             height: 100%;
+             width: 100%;
+             position: absolute;
+             z-index: 1;
+              display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .bg{
+            background: url(https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=1600&q=80);
+            background-repeat: no-repeat;
+            background-position: center 25%;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+          animation: bg-img 15s infinite ease;
+         animation-direction: normal;
+        }
+           #container{
+           
+          margin-top: 20px;
+            width: 80%;
+          height: 350vh;
+            display: grid;
+            grid-auto-flow: row;
+            grid-auto-rows: 1fr;
+           grid-template-columns:1fr 1fr 1fr;
+           grid-gap: 20px;
+           justify-self: center;
+           align-self: center;
+           grid-template-areas: "box-1 box-2 box-3" "box-1 box-2 box-3""box-1 box-4 box-5" "box-6 box-7 box-8" "box-6 box-7 box-8" "box-9 box-10 box-8" "box-11 box-12 box-13" "box-11 box-12 box-13";
+         
+        }
+      
+               .content1{       
+          grid-area: box-1;
+        position: relative;
+        overflow: hidden;
+
+        }
+        .content2{
+           
+              grid-area: box-2;
+                position: relative;
+        overflow: hidden;
+        }
+       
+        .content3{
+         
+            grid-area: box-3;
+              position: relative;
+        overflow: hidden;
+              
+        }
+        .content4{
+            position: relative;
+        overflow: hidden;
+              grid-area: box-4;
+           
+        }
+         .content5{
+              position: relative;
+        overflow: hidden;
+              grid-area: box-5;
+              
+        }
+         .content6{
+             position: relative;
+        overflow: hidden;
+              grid-area: box-6;
+              
+        }
+         .content7{
+              position: relative;
+        overflow: hidden;
+              grid-area: box-7;
+           
+              
+        }
+         .content8{
+            position: relative;
+        overflow: hidden;
+              grid-area: box-8;
+             
+              
+        }
+         .content9{
+               position: relative;
+        overflow: hidden;
+              grid-area: box-9;
+           
+              
+        }
+           .content10{
+           position: relative;
+        overflow: hidden;
+              grid-area: box-10;
+              
+        }
+         .content11{
+              position: relative;
+        overflow: hidden;
+              grid-area: box-11;
+           
+              
+        }
+         .content12{
+             position: relative;
+        overflow: hidden;
+              grid-area: box-12;
+           
+        }
+         .content13{
+              grid-area: box-13;
+              
+        }
+          .img-cont{
+            position: absolute;
+            height:100%;
+            width: 100%;
+        }
+        .img-cont img{
+            height:100%;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .contents:hover .img-info img{
+            transform: scale(1.1);
+        }
+        .img-info{
+           position: absolute;
+           bottom: 0;
+           left: 0;
+           width: 100%;
+           color:white;
+           transform: translateY(100%);
+           transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+           padding: 15px;
+           font-family: cursive;
+           letter-spacing: 2px;
+        }
+        .img-info h2{
+            color:white ;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+          .img-info p{
+            color:white;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+         .contents:hover .img-info{
+            transform: translateY(0);
+         }
+          .contents:hover img{
+            transform: scale(1.05);
+         }
+ 
+
+        #redirects{
+            display: flex;
+            flex-wrap: wrap;
+            width: 60%;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100px;
+            margin: 0 auto;
+             margin-top: 20px;
+        }
+        #redirects a{
+            text-decoration: none;
+            color:#4a5f6d ;font-size: 20px;
+        }
+        #about{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 100px 0 0 0 ;
+            padding: 0;
+        }
+        #about h2{
+            color: #2c3e50;
+         font-size: 40px;
+         font-weight: lighter;
+         font-family: cursive;
+        }
+        .about-grid{
+               /* margin-top: 20px; */
+            width: 55%;
+          height: 90vh;
+            display: grid;
+            grid-auto-flow: row;
+            grid-auto-rows: 1fr;
+           grid-template-columns:1fr 1fr;
+           grid-gap: 20px;
+           grid-template-areas:"info image""info image""info exp-photos";
+        }
+        .about-info{
+            grid-area: info;
+            width: 1fr;
+             height: 90vh;
+        }
+         .about-info p{
+               font-size: 18px;
+    line-height: 26px;
+    color: #4a5f6d;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    margin-top: 0;margin-bottom: 20px;
+     font-size: 18px;
+       padding: 0 10px 10px 10px ;
+}
+
+        .About-image{
+        grid-area: image;
+         width: 1fr;
+         height: 60vh;
+        }
+     .About-image img{
+      height: 100%;
+      width: 100%;
+     }
+     .exp-photos{
+        display: flex;
+        gap: 20px;
+     }
+     .exp-photos h3{
+        color: #7ba8bd;
+        font-size: 30px;
+        margin-bottom: 0;
+        padding: 0;
+     }
+    .exp-photos p{
+        color: #4a5f6d;
+        font-size: 18px;
+    }
+
+        
+        .experience{
+ 
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+height: 20vh;
+width: 32vh;
+background-color: white
+        }
+        .photos{
+         display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+height: 20vh;
+width: 30vh;
+background-color: white;
+        }
+        #form-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+             margin-top: 130px;
+          
+        }
+           #form-section h2{
+                 color: #2c3e50;
+         font-size: 40px;
+         font-weight: lighter;
+         font-family: cursive;
+           }
+            #form-section p{
+  color: #4a5f6d;
+        font-size: 18px;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 41%;
+              margin-top: 50px;
+            }
+            input,textarea{
+                width:100%;
+                height: 50px;
+                margin: 0;
+                margin-bottom: 20px;
+                border: none;
+                border-radius: 2px;
+            }
+            textarea{
+                height: 150px;
+            }
+            button{
+                height: 50px;
+                color: white;background-color: #2c3e50;
+                border: none;
+                  border-radius: 2px;
+                  cursor: pointer;
+            }
+            label{
+                  margin-bottom: 10px;
+                  color: #4a5f6d;
+            }
+            .details{
+                width: 100%;
+                height: 100px;display: flex;
+                justify-content: center;
+                align-items: center;border-bottom: 0.5px solid #c8d2d8;
+                margin-top: 40px;
+                padding-bottom: 70px;
+                gap: 20px;
+            }
+               .details p a{
+                text-decoration: none;
+                  color: #4a5f6d;
+                  font-size: 15px;
+               }
+               .copyrights{
+                display: flex;
+                justify-content: center;align-items: center;
+                color: #7ba8bd;
+                width: 100%;
+                height:150px;
+                letter-spacing: 2px;
+                word-spacing: 5px;
+                font-size: 14px;
+               }
+    </style>
+</head>
+<body>
+    <header>
+      <nav>
+          <h1><span>&#10054</span>WINTER</h1>
+           <ul>
+            <li><a href="#home-wintermovments">Home</a></li>
+            <li><a href="#container">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#form-section">Contact</a></li>
+           </ul>
+      </nav>
+    </header>
+    <main>
+  <div class="bg">
+
+  </div>
+  <div class="heading" id="home-wintermovments">
+    <h1>Winter Moments</h1>
+  <p>A Collection of frozen beauty</p>
+  </div>
+    </main>
+    <section id="redirects">
+        <a href="#">
+          All
+        </a>
+        <a href="#">
+          Landscapes
+        </a>
+        <a href="#">Decorations</a>
+        <a href="#">Food</a>
+        <a href="#">Family</a>
+    </section>
+      <div id="container">
+        <div class="contents content1">
+           <div class="img-cont">
+               <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800&q=80" alt="">
+           </div>
+            <div class="img-info">
+                <h2>Mountain Snow</h2>
+                <p>Landscapes</p>
+            </div>
+        </div>
+        <div class="contents content2">
+            <div class="img-cont">
+            <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=800&q=80" alt="">
+            </div>
+             <div class="img-info">
+                <h2>Ornament Detail</h2>
+                <p>Decorations</p>
+            </div>
+        </div>
+        <div class="contents content3">
+            <div class="img-cont"> <img src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=800&q=80" alt=""></div>
+             <div class="img-info">
+                <h2>Winter Warmth</h2>
+                <p>FOOD</p>
+            </div>
+           
+        </div>
+        <div class="contents content4">
+              <div class="img-cont">  <img src="https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=800&q=80" alt=""></div>
+             <div class="img-info">
+                <h2>Frozen Lakes</h2>
+                <p>LANDSCAPES</p>
+            </div>
+          
+        </div>
+        <div class="contents content5">
+              <div class="img-cont">  <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=800&q=80" alt=""></div>
+             <div class="img-info">
+                <h2>Family Joy</h2>
+                <p>FAMILY</p>
+          </div>
+        </div>
+        <div class="contents content6">
+              <div class="img-cont">  <img src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?w=800&q=80" alt=""></div>
+             <div class="img-info">
+                <h2>Holiday Lights</h2>
+                <p>DECORATIONS</p>
+            </div>
+          
+        </div>
+        <div class="contents content7">
+              <div class="img-cont"> <img src="https://images.unsplash.com/photo-1514517521153-1be72277b32f?w=800&q=80" alt=""></div>
+             <div class="img-info">
+                <h2>Festive Treats</h2>
+                <p>FOOD</p>
+            </div>
+           
+        </div>      
+        <div class="contents content8">
+              <div class="img-cont">   <img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=800&q=80" alt=""></div>
+             <div class="img-info">
+                <h2>Winter Forest</h2>
+                <p>LANDSCAPES</p>
+            </div>
+         
+        </div>
+        <div class="contents content9">
+              <div class="img-cont">  <img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=800&q=80" alt=""></div>
+             <div class="img-info">
+                <h2>Winter Together</h2>
+                <p>FAMILY</p>
+            </div>
+          
+        </div>   
+        <div class="contents content10">
+              <div class="img-cont">   <img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?w=800&q=80" alt=""></div>
+             <div class="img-info">
+                <h2>Gift Wraping</h2>
+                <p>DECORATIONS</p>
+            </div>
+         
+        </div> 
+        <div class="contents content11">
+              <div class="img-cont">  <img src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?w=800&q=80" alt=""></div>
+             <div class="img-info">
+                <h2>Snow Paths</h2>
+                <p>Landscapes</p>
+            </div>
+          
+        </div>
+         <div class="contents content12">
+              <div class="img-cont"> <img src="https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?w=800&q=80" alt=""></div>
+             <div class="img-info">
+                <h2>Cozy Drinks</h2>
+                <p>FOOD</p>
+            </div>
+           
+        </div>  
+           <div class="contents content13"></div>    
+
+      
+    </div>
+    <section id="about">
+        <h2 id="about-head">About</h2>
+        <div class="about-grid">
+            <div class="about-info">
+                <p>Capturing the serene beauty of winter landscapes has been my passion for over a decade. Each photograph tells a story of frozen moments, quiet snowfalls, and the peaceful stillness that blankets the world during the coldest months.</p>
+
+<p>From the majestic mountain peaks covered in pristine snow to intimate family moments wrapped in winter warmth, my work celebrates the unique beauty that this season brings. Through my lens, I aim to preserve the fleeting magic of winter—the way light dances on ice crystals, the cozy comfort of holiday gatherings, and the breathtaking landscapes transformed by snow.</p>
+<p>My photography has been featured in various publications and exhibitions, and I continue to explore new ways to capture the essence of winter's wonder.</p>
+            </div>
+        <div class="About-image">
+            <img src="https://images.unsplash.com/photo-1452802447250-470a88ac82bc?w=800&q=80" alt="">
+        </div>
+       <div class="exp-photos">
+         <div class="experience">
+            <h3>10+</h3>
+            <p>Years Experience</p>
+        </div>
+        <div class="photos">
+              <h3>500+</h3>
+            <p>Photos Captured</p>
+        </div>
+       </div>
+        </div>
+    </section>
+    <section id="form-section">
+        <h2>Get In Touch</h2>
+        <p>Let's work together to capture your winter moments</p>
+        <form action="">
+            <label for="username">Name</label>
+            <input type="text" id="username">
+            <label for="emailid">Email</label>
+            <input type="email" name="email" id="emailid">
+            <label for="Messages">Messages</label>
+            <textarea name="Messages" id="Messages"></textarea>
+            <button type="button">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <div class="details">
+            <p id="email-id"><span>📧</span><a href="mailto:abc@gmail.com">hello@winterportfolio.com</a></p>
+            <p id="phone"><span>📱</span><a href="tei:+911234567890">+1 (555) 123-4567</a></p>
+            <p id="location"><span>📍</span><a href="https://www.google.com/maps/search/?api=1&query=Colorado+USA">Colorado, USA</a></p>
+        </div>
+        <div class="copyrights">&copy;2026 Winter Portfolio • Designed by Tooplate</div>
+    </footer>
+</body>
+</html>
