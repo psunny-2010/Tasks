@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny Pellakuri| Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html{
+              scroll-behavior: smooth;
+        }
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+          margin: 0;
+          padding: 0;
+          background-color: #f2f4fd;
+        
+        }
+        header{
+           top: 0;
+           left: 0;
+           width:290px;
+            z-index: 1000;
+           height: 100vh;
+           background-color: rgba(0, 0, 0, 0.892);
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+             position: fixed;
+             overflow-y: auto;
+             overflow-x: hidden;
+        }
+        .profile-image{
+            height: 130px;
+            width: 140px;
+            border: 5px solid rgb(139, 138, 138);
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 60px;
+        }
+        .profile-image img{
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            scale: 1.1;
+        }
+        header h1{
+            margin-top: 20px;
+            font-size: 23px;
+            color: white;
+        }
+        .profile-links{
+              margin-top: 20px;
+            width: 100%;
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+        .link-logo{
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(110, 108, 108, 0.678);
+             overflow: hidden;
+        }
+        .link-logo img{
+            width: 33px;
+            height: 33px;
+          transform: scale(1.3);
+        }
+        .page-links{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         
+        }
+        .page-links ul{
+             list-style-type: none;
+             font-size: 20px;
+             margin-left: -30px;
+        }
+        .page-links ul li  {
+            text-decoration: none;
+            color: white;
+            margin: 25px 0;
+        }
+        .page-links ul li a{
+            text-decoration: none;
+            color: white;
+        }
+         .page-links ul li a:hover{
+            color: red;
+            font-size: 30px;
+            width: 120px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50px;
+            padding: 20px 30px;
+         }
+        #maincont{
+            height: 100vh;
+            width:minmax(710px,81%);
+            position: relative;
+            margin-left:290px ;
+          
+        }
+        .mainimage{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        .mainimage video{
+            height: 100%;
+            width: 100%;
+        }
+
+        .maintxt{
+            position: absolute;
+            color: white;
+            z-index: 1;
+            left: 50px;
+            top: 30vh;
+        }
+        .maintxt h1{
+            font-size: 70px;
+        }
+        .maintxt p{
+            font-size: 30px;
+            display: flex;align-items: center;
+            gap: 15px;
+            
+        }
+        
+
+        .changing-text{
+            font-family: 'Courier New', Courier, monospace;
+            display: inline-block;
+            margin-left: 5px;
+        }
+        .changing-text{
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink{
+            50%{border-color: transparent;}
+        }
+          .changing-text::after{
+            content: "";
+            display: inline-block;
+            color: orangered;
+            font-weight: bold;
+              border-right: 3px solid rgb(241, 245, 18);
+                white-space: nowrap;
+            animation: textloop 10s infinite;
+          }
+          @keyframes textloop{
+            0%{ content: ""; 
+                width: 0; 
+                letter-spacing: -10px; 
+                opacity: 0;
+            }
+            10%, 25% {
+                content: "Web Developer";  
+               width: 100%; 
+               letter-spacing: 2px; 
+               opacity: 1; 
+            }
+            30% { 
+               width: 0; 
+               opacity: 0; 
+                }
+            33%{  
+                  width: 0; 
+                  letter-spacing: -10px; 
+                  opacity: 0;
+               }
+               43%, 58% { 
+                content: " Badminton Player";
+                   width: 100%; 
+                   letter-spacing: 2px; 
+                     opacity: 1; 
+                }
+                63% { 
+                 width: 0; 
+                  opacity: 0; 
+                  }
+            66%{ 
+                  width: 0; 
+                   letter-spacing: -10px; 
+                  opacity: 0;
+               }
+               76%, 91% { 
+                content: " Assosiate at OPPTY"; 
+                    width: 100%; 
+                     letter-spacing: 2px; 
+                    opacity: 1; 
+                }
+                 96%, 100% { 
+                      width: 0; 
+                     opacity: 0; 
+                       }
+
+          }
+          #aboutMain{
+             height: 100vh;
+             width:minmax(710px,81%);
+             margin-left:290px ;
+             
+          }
+          #about{
+            height: 60vh;
+            width: 80%;
+            margin:0 auto;
+            place-content: center;
+          }
+          #abouth2 {
+           font-size: 35px;
+           position: relative;
+          
+          }
+           #abouth2::before{
+            content: "";
+            height: 3px;
+            background-color: rgb(51, 51, 223);
+            width: 60px;
+            position: absolute;
+            top: 45px;
+           }
+           #about p{
+          
+            font-size: 18px;
+           }
+           .aboutbox{
+            display: flex;
+            width: 100%;
+           align-items: center;
+           }
+           .aboutimage{
+            width: 35%;
+           }
+           .aboutimage img{
+            height: 100%;
+            width: 100%;
+           }.aboutinfo h2{
+            position: relative;
+            font-size: 30px;
+            margin-left: 20px;
+           }
+            .aboutinfo h2::before{
+            content: "";
+            height: 3px;
+            background-color: rgb(51, 51, 223);
+            width: 225px;
+            position: absolute;
+            top: 45px;
+           }
+           .aboutinfo{
+            width: 65%;
+           }
+            .aboutinfo p{
+                margin-left: 20px;
+            }
+           .aboutlists{
+            display: flex;
+            justify-content: space-around;
+            padding-right: 20px;
+           
+           }
+            .aboutlists ul{
+                list-style-type: none;
+            }
+            .aboutlists ul li{
+                height: 50px;
+                position: relative;
+                
+            }
+             .aboutlists ul li::before{
+                content: "\2713";
+                position: absolute;
+                font-size: 20px;
+                font-weight: bold;
+                left: -25px;
+                top: -5px;
+                color:rgb(51, 51, 223) ;
+               display: inline-block;
+
+             }
+     #skills{
+           height: 80vh;
+             width:minmax(710px,81%);
+             margin:50px 0 0 290px ;
+             padding: 0;
+     }
+        #skills h2{
+        
+            position: relative;
+            font-size: 30px;
+            margin-left: 20px;
+           }
+            #skills h2::before{
+            content: "";
+            height: 3px;
+            background-color: rgb(51, 51, 223);
+            width: 55px;
+            position: absolute;
+            top: 45px;
+           }
+           #skills p{
+              margin:0 0 0 20px;
+           padding: 0;
+            font-size: 18px;
+           }
+           .skills-box{
+            height: 81%;
+            width: 100%;
+            display: flex;
+           }
+           .skillspercent{
+            width: 50%;
+            height: 100%;
+            padding: 0 20px;
+            margin: 0;
+              display: flex;flex-direction: column;
+            justify-content: space-evenly;
+           }
+           .HTML{
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+           }
+           .CSS{
+             display: flex;
+              flex-direction: column;
+              gap: 10px;
+           }
+           .JS{
+             display: flex;
+              flex-direction: column;
+              gap: 10px;
+           }
+             .HTML p{
+                width: 90%;
+                padding-bottom: 15px;
+             }
+           .HTML p span{
+            margin-right: 20px;
+            float: right;
+              opacity: 0;
+            transform: translateX(-100%);
+            animation: slideleft 1s ease-out 0.5s forwards;
+           }
+           .CSS p{
+              width: 90%;
+           }
+            .CSS p span{
+            margin-right: 20px;
+            float: right;
+              opacity: 0;
+            transform: translateX(-100%);
+            animation: slideleft 1s ease-out 0.5s forwards;
+           }
+            .JS p{
+              width: 90%;
+           }
+            .JS p span{
+            margin-right: 20px;
+            float: right;
+                 opacity: 0;
+            transform: translateX(-100%);
+            animation: slideleft 1s ease-out 0.5s forwards;
+           }
+            
+           .perc{
+            border: 0.5px solid rgb(65, 65, 65);
+            width: 90%;
+            height: 10px;
+              overflow: hidden;
+                border-bottom-right-radius: 50px;
+             border-top-right-radius: 50px;
+             border-top-left-radius: 50px;
+             border-bottom-left-radius: 50px;
+           }
+           
+           .htmlperc{
+            background-color: rgb(67, 99, 238);
+            width: 100%;
+            height: 100%;
+             opacity: 0;
+            transform: translateX(-100%);
+              border-bottom-right-radius: 50px;
+             border-top-right-radius: 50px;
+              border-top-left-radius: 50px;
+             border-bottom-left-radius: 50px;
+            animation: slideleft 2s ease-out 0.5s forwards;
+           }
+           .cssperc{
+             background-color: rgb(67, 99, 238);
+            width: 80%;
+            height: 100%;
+            opacity: 0;
+            border-bottom-right-radius: 50px;
+             border-top-right-radius: 50px;
+              border-top-left-radius: 50px;
+             border-bottom-left-radius: 50px;
+            transform: translateX(-100%);
+              animation: slideleft 2s ease-out 0.5s forwards;
+           }
+           @keyframes slideleft{
+            0%{
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100%{
+                  opacity: 1;
+                transform: translateX(0);
+            }
+           }
+           .jsperc{
+             background-color: rgb(67, 99, 238);
+            width: 50%;
+            height: 100%;
+             opacity: 0;
+            transform: translateX(-100%);
+              border-bottom-right-radius: 50px;
+             border-top-right-radius: 50px;
+              border-top-left-radius: 50px;
+             border-bottom-left-radius: 50px;
+            animation: slideleft 1s ease-out 0.5s forwards;
+           }
+           .javaperc{
+  background-color: rgb(67, 99, 238);
+            width: 70%;
+            height: 100%;
+             opacity: 0;
+               border-bottom-right-radius: 50px;
+             border-top-right-radius: 50px;
+              border-top-left-radius: 50px;
+             border-bottom-left-radius: 50px;
+            transform: translateX(-100%);
+            animation: slideleft 1s ease-out 0.5s forwards;
+           }
+           .sapperc{
+  background-color: rgb(67, 99, 238);
+            width: 90%;
+            height: 100%;
+             opacity: 0;
+               border-bottom-right-radius: 50px;
+             border-top-right-radius: 50px;
+              border-top-left-radius: 50px;
+             border-bottom-left-radius: 50px;
+            transform: translateX(-100%);
+            animation: slideleft 1s ease-out 0.5s forwards;
+           }
+           .itgcperc{
+  background-color: rgb(67, 99, 238);
+            width: 60%;
+            height: 100%;
+             opacity: 0;
+               border-bottom-right-radius: 50px;
+             border-top-right-radius: 50px;
+              border-top-left-radius: 50px;
+             border-bottom-left-radius: 50px;
+            transform: translateX(-100%);
+            animation: slideleft 1s ease-out 0.5s forwards;
+           }
+
+    
+             #Contact{
+                  height: 110vh;
+            width:minmax(710px,81%);
+            margin:50px 0 50px 290px ;
+          
+             }
+             .contactinside{
+                width: 80%;
+                height: 100%;
+                margin: 50px auto;
+                place-content: center;
+                padding: 0;
+                border-radius: 10px;
+                  background-color: white;
+             }
+              #contacth2 {
+           font-size: 35px;
+           padding: 0;
+    margin: 0 0 0 20px;
+           position: relative;
+          }
+           #contacth2::before{
+            content: "";
+            height: 3px;
+            background-color: rgb(51, 51, 223);
+            width: 60px;
+            position: absolute;
+            top: 45px;
+           }
+            #contactp{
+            margin: 0;
+           padding: 0;
+            font-size: 18px;
+           }
+           #contactbox{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+           
+            justify-content:space-around;
+            align-items: center;
+           }
+           .address{
+            width: 41%;
+           }
+           .address ul{
+            list-style-type: none;
+            padding: 0;
+           }
+         .address ul li ul{
+           margin: 10px 0 0 0;
+           font-size: 16px;
+           letter-spacing: 1.5px;
+           padding: 0;
+           }
+    
+     .fa-solid{
+        color:red;
+        font-size: 44px;
+        margin-left: 20px;
+     }
+     .fa-solid:hover{
+        color: rgb(42, 42, 145);
+     }
+      .map {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-left: 20px;
+      }
+     
+     .map iframe{
+        height:350px;
+        width: 100%;
+        margin: 0 auto;
+     }
+     .form{
+        width: 59%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        margin: 0px 0 0 0;
+        padding: 0;
+     }
+     .form input{
+        width: 90%;
+        height: 40px;
+        margin: 0 auto;
+        border: 1px solid #8b8989;
+     }
+     .form label{
+        font-size: 18px;
+        margin: 0 23px;
+        
+     }
+     .form textarea{
+        height: 150px;
+        width: 90%;
+        margin: 0 auto;
+         border: 1px solid #8b8989;
+     }
+     .form button{
+        width: 150px;
+        border: none;
+        border-radius: 2px;
+        background-color: rgba(0, 0, 0, 0.408);
+        height: 50px;
+        font-size: 15px;
+        margin: 0px  auto 0 auto;
+     }
+     .form button:hover{
+        background-color: black;
+        color: white;
+     }
+     footer{
+        height: 150px;
+        width:minmax(710px,81%);
+        margin-left:290px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        color: black;
+        border-top: 1px solid rgb(70, 70, 70);
+     }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-image">
+            <img src="./media/WhatsApp Image 2026-02-11 at 9.43.37 PM.jpeg" alt="profile-pictute">
+        </div>
+        <h1>SUNNY PELLAKURI</h1>
+        <div class="profile-links">
+            <a href=""><div class="link-logo"><img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?semt=ais_user_personalization&w=740&q=80" alt=""></div></a>
+             <a href=""><div class="link-logo"><img src="data:image/png;base64,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" alt=""></div></a>
+             <a href=""><div class="link-logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbwyiGCGU-PzEoa-WuUaq69J37IgdfeCI4cOmtasqn6w&s" alt=""></div></a> 
+             <a href=""><div class="link-logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdeWuSBDKietDeFcQ_glB95iE5Opkb6_KD1Q&s" alt="skype"></div></a>
+             <a href=""><div class="link-logo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEUAAAD////y8vJ+fn63t7dWVlY3NzfV1dWEhIRGRka+vr4VFRWLi4teXl6srKz09PTJycn5+fkbGxumpqbm5uZOTk4hISHc3NyYmJguLi7Nzc1BQUHs7OwMDAx0dHQpKSlqamo6OjplZWWSkpKenp4yb9UCAAALTUlEQVR4nN2d7ZaqOgyGRREQ+VJQFFHZM97/NR4ZnRFK26Sl0Pa8f2btvRbKI6VN0jRZOP93LXTfwOSag3BXlL7vV1WWZaGbuOHzb1U9/6csdjN8+7SEu6IKkzxqDhfvvr8uPrru797l0ER5ElYTc05H6CenaBVfjgu+jpd4FZ0Sf7L7mIawdhFsJKdbT3IvExBmweG8F6D71f58CDL1t6OYMH14EmxdeY9U7S0pJEzrMB6J91Ic1goplREWWXRXwtfqHmWFqhtTQ7jM8rUyvJfWebZUcm8qCFP3dlbM1+p8c1UMVgWE+ZfIuiCi41duAGGy2U7E12q7SfQS7pIphmdf52ScVTeGsE6mGp59HZMx1o48YZptZuFrtcnk5xxpQj+aja9VJG2aSxIWj8usgIvF5SFpA8gRhvEVvifFusbhbIR1o84+E9G9kZlxJAhdLXgvuTMQpjeNgIvFTXhSFSX0VVvYolqLTqpihGky1sEdLy8Re4xChEUw/xQ61DUQWjdECDM1Lvx4xSLhHAHCXP8I/ZUn4FXhCU9Tekmi2p6UE+4C3VCEAqxPhSSsTQN8IiINHBxhsdLNQ9EKN6WiCMtGNw1VTamKsNRtx7C0xiAiCKuDbhKmDpUKwtJcwCci/BRBQmOH6EvwQIUIi4byse0O7vluhgXQQDMqQFgPl4n9YXVKwipz8+9m7mANTStgXeQTDi2Z4yr5jItdlX/pgOoLsG74hAPAW0g4Z4Wr/zkG8oQn4qOuOWVElPrtHa4ZziPMybmEvvqk5A8xu7Y8Z4pDmJH+IPOVTrRwdeRxXGI2YUF49FdOCEj7U4zZawaTMCVmmStvI2+pN8T4VMAMTzEJEyLotOLuqpe6IxzsB8Ai9IlbPgPBn3l3oijyWC8RgzAlrVEoaLCUyYJSqjVjnDIIyffqDm4Y6F8VbyKEg80Xzlz1VqkDqi/6U6AS1oOL+YbRjwwIh1MXbCphQ166R0RgBxfNrwZLGA42QO+I7ddvHUyI26QQksbMgjMVd6TddFvQpwsK4WP4Rl0QoclKAxGp6wND6FMcPgxhNj/QUJfhYBsQpjTrxJZRulhEg3V/QEh9FPCCb4Dd9tLAuiQJa2oqF9fFfMuAiE2rDbkokoSMsbaCCecFYYt0MgjCHSPbcA1ONf68HGwdCR+BIGRNF0cLLO9fEQ+RIGQmxLJ96JeW86SaYnTmEbJn/D3gAZu0R9x/iH1CTk7sjRs896fPhsZrwyYcBEi74i0YS1MybX7UX9u6hCl/SWP7F2RcTre+upNGl9DlzxbMV3FnVKrNgpj5O4Rg0PNMXzLSQHsUitStE/rsEGbgbHE8UdaMwhBzratu7LNDmMNXXtfky7j71h0LpiqnERa4DftDd7WpTyatEh11rMwPId6DPZxcvy6qJDAUr1U2JKR6vvbq4wn/EdZ6ThhMpXs9IAx135NihQNCo+wuBYpJwlT3HSlXShA+dN+Qcj0IQiPX7VHyCELd9zOB+oRGBKwVK+sRGubgKVHQIzQsS3arwuE8dAlrUyxM75Zk5a9897vZyG8tn+sOoWuEDxtUy7Qfzt3t0rQ8SZ4Z37sdQkQ4Nw54iiiD4LLiXUHs4R0bXlJ6uJYZtqsOIcJkA/a5KZ/AT8HpzW0bWvCgp5L8SRCKP4S0TVFSQFif4j5z88R2nWGz+cacfikiUcbXdukPIab6w3SEK+y510pwb+SY/BFikienIjzm+EI7S8F95tMfIca9n4hwLVbdKxPaAIp+CXeYpz8NIerkUle+SChitXsTUhJoZiL8Ei+SQKaF8vSTXtMSVphJagrCL5maLNU/NOGlehOGmME9ASEmS4ciYHulo2P4JkTNUOoJt4ijddRL8Y5Q8iZEhPOnIJSucUXPiKEpfxHuULFg5YSxfGEkdOQz2v0QUg/gTU84pswl1n5rj+4tsIdEFROOEzbluj1iusDZ3YYRYuPXre29wK6hZhEiI2femxBlCJlFuMS9iffqh7BChTDMIsStcIv9mxAV7DGMEJcoeH0R4sa0YYQlbtXP7CVc4kw3iwmRVeNehDgbyDTCDLUChD+EuF9jesK0rgVqsZaoRd/9IcSFdyYlXIZJ/ohut+iRuEh7FecvJGY8w+rUfELm139BiHqUWJ9P/3tY38iwxPkL4xujXP3QgLm0oi1sRwTioFwATQasFqwMCfht9DFOn35C9iwHhvprzGSa6bZLOa7pBrwYUeXgqtu3SBv5L0Rter59C33+IXedOkCRKoRletft43P9A/Ag0gl+u359fF1xGiCeBJ2QT+C36x2n0RZrAybDGLgeseS/Y21a4qWtgG/0gNSB4aH6gd7xUi0xbwcR9AQOroZwEtA75q1l38JBJHwCdWbh8yG/+xZa9p4cRJmJiH99Ba8Bv3tPOvYPHWCtaMU/EIhY5f72D3XsATuI7RVgk78EN4P/9oB17OM/TTbwBg9867sAf6K/fXwduRjPGwQH2YZPWIOEf7kYOvJpMAdrL3w/eAm+yH/5NDpyojDhwH9jCT85URry2jBGF69WIIawk9emITfx+bOCKaNAjTiQsJObiNlSVU5IKfRD6D6SsJNfinGXlRPCdaWOfNMbJOzmCCPyvJUTwhP4dhxhL88bkatvH2EvVx9x3sI+wt55C0RUxz7C/pkZOCpsH2H/3BN8ds0+wl+y91/QDLaOkDx/CIYUrCMkz5CC54CtIyTPAYOGm22Eg7Pc4E6wbYTD8/hQTQXLCCk1FaC6GJYRUupiQIu+ZYSU2iZQfRq7CKn1aYDgvl2E1BpDwD6AVYSMOlH8Wl9WETJqffGjXzYRsuq18Wvu2UTIrLnHrZtoESG7biJ3w8siQk7tS95eqUWEvPql7Bq0FhFya9ByHqI9hPw6wqxa0BYRArWg2Q/RGkKgnjf7BKothGBNdqYTZQshWFef6QlbQojojcDaLrWDENPfgrV1aQUhrkcJI73GCkJknxl6WqMNhNheQfScOhsI0f2eKD277CDE9+yiJdFbQCjQd412WsN8QqHeecP+h+YTCvY/HKanmk4o2sNy2IfUcELxPqSDnhWGE0r0kiVNG7MJZfoBk4c0jSaU6+lMhE9NJpTty93PHTaZULq3ei8ZzGBC/iE3PmGnNJoEIf+I5GjC9E0INGPmEzr1X27tqfQ5ohVTaTLuFfAx3u2D9wF+9jqwsQJqLwKEn6N7d4+nf5Q9nT3/CkT2PP87vR+bpIFKE0KETolrP6NLcHlQkBB5xFSTDnD9U5jQqcxFPCCqSyAIzR2oqAq2GEKnbHSzUNWgSvSiCJ3CnB6cH61wBV5xhE5tXnuIAFmDGEkoUvh1HgGWjDjh0ww3qcnhFjjnLUXo5OZ02/EQPaYlCJ3MlK5XsUj9WhFCpwjkO4ao0zUQqpItROikif6R6iViJZbFCB3H123frLG9ImQJnRRRnmlC3YRrZAsTYmv0TSOweJQSQqdu9HSDvDfirRTkCB0njOefVK8xUJFHKaFTPMRb94zT5SHXSUGW8DmpztuZNRKdQscTOmkm2UtLQptMvs2APOFzxsFUm1CgYyIzw6ggfPpUyfQt6c6JQO1d5YRPJZspvartRrrPhzLCp1f1NdVgPX4JeEkTEjqpe5tisJ5vrvz88pEKQsdZZrlqi3ydZ2rqgashfKrIInW23D3KJNf3oZQRthXHQzVBgDisVQzPtxQStkofY11k76GQrpViwlZZcDjL9DXdnw/BmAZCDE1A+FTtruKLyBpyvMQrd4zlwtY0hK385BQhOFu26JRIG9agpiNstSuqMMmj5nDx7vuuS3nd373LoYnyJKyKcVYZpGkJX9oVpe9XVZVlWegmbvj8+/yX75cTs700B6Fe/f8J/wMtlcvvIH/BqAAAAABJRU5ErkJggg==" alt=""></div></a>
+        </div>
+        <div class="page-links">
+            <ul>
+                <li><a href="#maincont">Home</a></li>
+                <li><a href="#about">About</a></li>
+                 <li><a href="#skills">Skills</a></li>
+                <li><a href="">Resume</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+  <main id="maincont">
+   <div class="maintxt">
+     <h1 id="myname">Sunny Pellakuri</h1>
+    <p>I <span style="color: red; font-size: 80px;">&#10084;</span> being <span class="changing-text"></span></p>
+    </div>
+    <div class="mainimage">
+     <video src="./media/26909-361107849_medium.mp4" autoplay muted loop></video>
+    </div>
+  </main>
+  <section id="aboutMain">
+ <div id="about">
+     <h2 id="abouth2">About</h2>
+  <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+  <div class="aboutbox">
+  <div class="aboutimage">
+  <img src="./media/my image.jpeg" alt="">
+  </div>
+  <div class="aboutinfo">
+  <h2>Sunny Pellakuri &#128526;</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <div class="aboutlists">
+       <ul>
+       <li><b>Birthday:</b>
+               21 October 2000</li>
+       <li><b>Website:</b>
+            www.example.com</li>
+       <li><b>Phone:</b>
+             +123 456 7890</li>
+       <li><b>City:</b>
+                Abcd,XYZ</li>
+       </ul>
+        <ul>
+        <li><b>Age:</b>25</li>
+        <li><b>Degree:</b>Bachelor</li>
+        <li><b>Email:</b>email@example.com</li>
+        </ul>
+  </div>
+  </div>
+  </div>
+  </section>
+  <section id="skills">
+    
+        <h2>Skills</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    <div class="skills-box">
+        <div class="skillspercent">
+               <div class="HTML">
+                   <p>HTML<span>100%</span></p>
+                   <div class="perc">
+                    <div class="htmlperc"></div>
+                   </div>
+               </div>
+               <div class="CSS">
+                     <p>CSS<span>80%</span></p>
+                    <div class="perc"> <div class="cssperc"></div></div>
+               </div>
+               <div class="JS">
+                    <p>JavaScript<span>50%</span></p>
+                    <div class="perc"> <div class="jsperc"></div></div>
+               </div>
+        </div>
+        <div class="skillspercent">
+                 <div class="HTML">
+                   <p>Java<span>70%</span></p>
+                   <div class="perc ">
+                    <div class="javaperc"></div>
+                   </div>
+               </div>
+               <div class="CSS">
+                     <p>SAP Security<span>90%</span></p>
+                    <div class="perc "> <div class="sapperc"></div></div>
+               </div>
+               <div class="JS">
+                    <p>ITGC<span>60%</span></p>
+                    <div class="perc "> <div class="itgcperc"></div></div>
+               </div>
+        </div>
+  </section>
+   <section id="Contact">
+     <div class="contactinside">
+         <h2 id="contacth2">Contact</h2>
+    <div id="contactbox">
+        <div class="address">
+            <ul>
+                <li> 
+                   <ul style="display: flex;;align-items: center; gap: 25px;">
+                      <li>  <i class="fa-solid fa-location-dot"></i></li>
+                      <li style="margin: 0;padding: 0;line-height: 10px;"><h3>Address</h3>
+                    <p>6/50-B,LM Compound, Muddanur</p></li>
+                   </ul>
+                </li>
+                <li >
+                    <ul style="display: flex;;align-items: center; gap: 17px;">
+                        <li> <i class="fa-solid fa-phone"></i></li>
+                        <li style="margin: 0;padding: 0;line-height: 10px;"><h3>Call US</h3>
+                         <p>+91 8374812874</p></li>
+                    </ul>
+                   
+                     
+                </li>
+                <li>
+                    <ul style="display: flex;;align-items: center; gap: 25px;">
+                        <li><i class="fa-solid fa-regular fa-envelope"></i></li>
+                        <li style="margin: 0;padding: 0;line-height: 10px;"><h3>Email Us</h3>
+                    <p>pellakurisunny@gmail.com</p></li>
+                    </ul>
+                    
+                </li>
+            </ul>
+<div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61746.68838038002!2d78.3503268319791!3d14.70308826346738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb38979a00146ab%3A0x9bd6af321269ace4!2sMuddanur%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1770827071370!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+
+</div>
+        </div>
+        <div class="form">
+                <label for="Name">Your Name</label>
+                <input type="text" id="Name" name="Name">
+                 <label for="Email">Your Email</label>
+                 <input type="email" id="Email">
+                 <label for="Subject">Subject</label>
+                 <input type="text" id="Subject">
+                 <label for="Message">Message</label>
+                 <textarea name="Message" id="Message"></textarea>
+                 <button>Send Message</button>
+        </div>
+    </div>
+     </div>
+   </section>
+   <footer>
+         <p>&copy; Copyright Portfolio All Rights Reserved</p>
+         <p>Designed by <b>Sunny.P</b></p>
+   </footer>
+</body>
+</html>
