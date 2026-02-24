@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR.Camel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #E6E6E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.logo{
+           font-family: "Pacifico", cursive;
+            font-style: normal;
+            font-weight: lighter;
+            letter-spacing: 1px;
+        } 
+.links{
+    display: flex;
+    gap: 20px;
+}
+ .links a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+ }
+ #grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 106vh;
+    grid-template-areas: "aside main";
+ }
+ aside{
+    padding-left: 20px;
+    padding-top: 20px;
+    border-right: solid 1px gray;
+ }
+ .img {
+    height: 177px;
+    width: 180px;
+ }
+ .img img{
+    height: 100%;
+    width: 100%;
+ }
+ nav ul{
+    list-style: none;margin-top: 15px;
+ }
+ nav ul li a{
+    width: 180px;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+       padding-left: 5px;
+   
+ }
+ nav ul li a:hover{
+    transition: all linear .4s;
+    background: cyan;
+    color: white;
+   
+ }
+ .active{
+     transition: all linear .4s;
+    background: cyan;
+    color: white;
+ }
+ nav ul li a{
+    text-decoration: none;
+    color: black;
+ }
+ aside p{
+    font-size: 24px;
+    margin-top: 70px;
+ }
+#footer{
+    height: 140px;
+    width: 100%;
+    background-color: #2E334D;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+ #footer p{
+       font-size: 20px;
+       letter-spacing: 1px;
+ }
+ main{
+   padding:0 15px;
+ }
+ .cont1{
+    width: 100%;
+    height: 215px;
+    border-bottom: 2px solid gray;
+ }
+ .cont1 p{
+   font-size: 24px;
+ }
+ .cont2 h2{
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+ }
+ .fas{
+    font-size: 35px;
+ }
+ table{
+    width: 100%;
+    border: .8px solid rgb(158, 157, 157);
+    border-collapse: collapse;
+ }
+ tr{
+    height: 40px;
+  
+ }
+ td,th{
+  border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+ }
+ tr:nth-child(1){
+   background-color: cyan;
+   color: white;
+   font: 18px;
+   font-weight: bold;
+ }
+ td{
+    padding-left: 10px;
+    font-size: 18.5px;
+ }
+ .svg{
+    height: 60px;
+    width: 40px;
+ }
+ form{
+    margin-top: 35px;
+ }
+ label{
+    font-size: 20px;
+    margin-right: 5px;
+ }
+ input{
+    width: 220px;
+ }
+ textarea{
+    width: 180px;
+    height: 80px;
+    margin-top: 5px;
+ }
+ button{
+    margin-top: 5px;
+    width: 60px;
+    height: 25px;
+ }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Mr.  Camel</h1> 
+        </div>
+        <div class="links">
+          <a href="https://www.facebook.com/">  <i class="fa-brands fa-facebook"></i></a>
+          <a href="">  <i class="fa-brands fa-instagram"></i></a>
+           <a href=""> <i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </header>
+  <section id="grid">
+       <aside>
+        <div class="img">
+            <img src="./media/032124c1-b891-4797-811e-a268bac732f8.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">Career</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+        <p>
+            "Do something <br> important in life. I<br> convert green grass <br> to code." <br>
+             - Mr .Camel
+        </p>
+       </aside>
+       <main>
+        <div class="cont1">
+            <h2 style=" font-size: 32px;
+    margin: 30px 0 20px 0;">About Me</h2>
+            <p>I don't look like handsome horse, but i'm real desert king. I can survive without water.</p>
+             <h2 style=" font-size: 32px;
+    margin: 20px 0 25px 0;">My Career</h2>
+            <p>I work as a Web Developer for a company that makes websites for camel bussiness.</p>
+        </div>
+        <div class="cont2">
+            <h2>How Can I Help You ?</h2>
+            <table>
+                <tr>
+                    <th>SKILL 1</th>
+                    <th>SKILL 2</th>
+                    <th>SKILL 3</th>
+                </tr>
+                <tr>
+                    <th><i class="fas fa-paint-brush"></i></th>
+                    <th><svg width="47" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3 5H21V9H3V5Z" fill="currentColor"/>
+  <path d="M4 10H20V19C20 20.1 19.1 21 18 21H6C4.9 21 4 20.1 4 19V10Z" fill="currentColor"/>
+  <path d="M9 13H15V15H9V13Z" fill="white"/>
+</svg></th>
+                    <th><svg class="svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M3 6H19V14H3V6Z" stroke="currentColor" stroke-width="2"/>
+  <path d="M7 6V14M11 6V14M15 6V14" stroke="currentColor" stroke-width="2"/>
+  <path d="M19 12H23" stroke="currentColor" stroke-width="2"/>
+  <circle cx="7" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
+  <circle cx="7" cy="18" r="1" fill="currentColor"/>
+</svg></th>
+                </tr>
+                <tr>
+                    <td><p>Cleaning Kaktus in your backyard</p></td>
+                    <td><p>Storing some fat for you</p></td>
+                    <td><p>Taking you through the desert</p></td>
+                </tr>
+            </table>
+          <form action="">
+              <label for="email">Email:</label>
+            <input type="email" id="email"> <br>
+            <label for="mobile">Mobile:</label>
+            <input type="tel" name="" id=""><br>
+            <textarea name="" id="">Enter Your Message</textarea> <br>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+       </main>
+  </section>
+  
+     <footer id="footer"><p>&copy; Copyright Mr. Camel.</p></footer>
+</body>
+</html>
