@@ -1,337 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bridge Architects</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProCareer</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: sans-serif;
+      background: #fff;
+      color: #1a1a1a;
+    }
+
+    section {
+      width: 100%;
+      padding: 50px 50px 0 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .left h1 {
+      font-family:sans-serif;
+      font-size: 45px;
+      margin-bottom: 18px;
+      color: #1b1b1b;
+    }
+    .p1 {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 36px;
+    }
+    .cont {
+      margin-bottom: 28px;
+    }
+     .sideheading {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+     .number {
+      font-family: serif;
+      font-size: 30px;
+      font-weight: 700;
+      color: #111;
+    }
+
+     .name {
+      font-size: 17px;
+      color: #888;
+      letter-spacing: 1px;
+    }
+
+    .cont p {
+      font-size: 14px;
+      line-height: 1.65;
+      color: #555;
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .right img {
+      width: 100%;
+      max-width: 480px;
+      object-fit: cover;
+    }
+    @media (max-width: 768px) {
+      section {
+        grid-template-columns: 1fr;
+        padding: 50px 24px;
+        gap: 40px;
+      }
+      .right { order: -1; }
+    }
+  </style>
 </head>
 <body>
-    <section id="section-1">
-        <div class="bgslide">
-             <div class="slideimages"><img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/h1-port-img-03.jpg" alt="">
-             <div class="bg-text"> <a href="">  <h2>Museum Of Fado Lisbon</h2></a>
-               <a href=""> <p>Architecture</p></a></div>
-            </div>
-            <div class="slideimages"><img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/h1-port-img-02-1.jpg" alt="">
-             <div class="bg-text"> <a href="">  <h2>Willie house in Bergen</h2></a>
-              <a href=""> <p>Architecture</p></a></div>
-            </div>
-             <div class="slideimages"><img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/h1-port-img-01-1.jpg" alt="">
-             <div class="bg-text"> <a href="">  <h2>Alvar Home & Studio </h2></a>
-             <a href=""> <p>Architecture</p></a></div>
-            </div>
+  <section>
+    <div class="left">
+      <h1>Our Mission &amp; Vision</h1>
+      <p class="p1">
+        At ProCareer, we strive to empower students by bridging the gap between education and employment.
+        Our commitment to collaboration, integrity, and diversity drives us to create opportunities for
+        students, colleges, and companies alike.
+      </p>
+
+      <div class="cont">
+        <div class="sideheading">
+          <span class="number">2024</span>
         </div>
-        <header id="main-header">
-     <div class="logo">
-         <b>Bridge</b><span>Architects</span>
-     </div>
-      <nav>
-        <ul>
-            <li><a href="">home</a></li>
-            <li><a href="" class="pages">pages</a>
-                 <ul class="pagesmenu">
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Our Studio</a></li>
-                    <li><a href="">Our Services</a></li>
-                 </ul>
-            </li>
-            <li><a href="">portfolio</a></li>
-            <li><a href="">blog</a></li>
-            <li><a href="">contact</a></li>
-        </ul>
-      </nav>
-      <div class="navcirc"></div>
-    </header>
-    <div class="sidesticky-1"><h1>630+</h1><div><p>Bridge</p> <p>Demos</p></div></div>
-    <div class="sidesticky-2"><i class="fa-solid fa-suitcase"></i></i>Buy Now $69</div>
-    </section>
-    <section id="section-2">
-   <div class="boxcont-2">
-   <div class="innerbox">
-     <div class="inline"><span></span><h6>ARCHITECT STUDIO</h6></div>
-     <h2>  Architects excited about beauty, affordability sustainability materials for every project and person</h2>
-     <p><a href="">read more</a></p></div>
-     <div class="innerbox">
-        <img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/11/h1-img-01.jpg" alt="">
-     </div>
-   </div>
-   <div class="boxcont-3">
-    <div class="insidebox insidebox-1" style=" width: 32%;margin: 0;padding: 0;letter-spacing: 1.7px;">
-        <h3>Design a perfect home</3>
-        <h3>Download our brochure</h3>
-        <h3 id="largeh3">Ask us your questions our architects</h3>
-    </div>
-    <div class="insidebox"style=" width: 28%;margin: 0;padding: 0;">
-        <h3>Urban Exteriors</h3>
-        <p>Purus sit amet vol utpat con sequat mauris nunc congue. Sed id s emper risus in hend rerit. Facilisi etiam dig nissim diam quis enim. Quis auctor.</p>
-    </div>
-    <div class="insidebox"style=" width: 33%;margin: 0;padding: 0 0 0 80px;">
-          <h3>Cityscapes Buildings</h3>
-          <p>Purus sit amet vol utpat con sequat mauris nunc congue. Sed id s emper risus in hend rerit. Facilisi etiam dig nissim diam quis enim. Quis auctor.</p>
-    </div>
-   </div>
-    </section>
-    <section id="section-3">
-           <div class="slidersec-3">
-             <div class="contonesec-3">
-              <div class="abc"><div class="disc"></div><p>our works</p></div>
-                <h3>Check out our projects</h3>
-             </div>
-             <div class="slidesec-3">
-                  <div class="slidecont3-1 slidecontainer-3"></div>
-                <div class="slidecont3-2 slidecontainer-3"></div>
-                 <div class="slidecont3-3 slidecontainer-3"></div>
-                    <div class="slidecont3-1 slidecontainer-3"></div>
-                <div class="slidecont3-2 slidecontainer-3"></div>
-                 <div class="slidecont3-3 slidecontainer-3"></div>
-             </div>
-           </div>
-    </section>
-      <hr>
-     <section id="section-4">
-      
-        <div class="verticalsec">
-            <div class="verticalcont">
-                <div class="verticaltext">
-                    <h1>Planning</h1>
-                </div>
-                <div class="verticaltext">
-                    <h1>Exterior</h1>
-                </div>
-                <div class="verticaltext">
-                    <h1>Residential</h1>
-                </div>
-                <div class="verticaltext">
-                    <h1>Interior</h1>
-                </div>
-            </div>
-            <div class="normalcont">
-                <div class="normalimg"><img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/h11-port-img-12-hover.jpg" alt=""></div>
-                <div class="normaltext">
-                    <p>
-                          Lorem ipsum dolor sit amet, cons ectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    </p>
-                    <p id="read">read more</p>
-                </div>
-            </div>
-        </div>
-      
-    </section>
-      <hr>
-    <section id="section-5">
-        
-        <h2 id="h2sec-5">
-          The whimsical feel of Villa Esther <br> begins with the Neo-Modern <br> gateway in the style of Le Corbusier’s <br>Villa Savoye.
-        </h2>
-    </section>
-    <section id="section-6">
-      <div class="photossec">
-          <div class="photocont"><img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/11/h1-team-img-01.jpg" alt=""></div>
-          <div class="photocont">
-            <h3>Robert Jhonson</h3>
-            <p>CEO / ARCHITECT</p>
-            <div class="icons-sec6">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-            </div>
-          </div>
-          <div class="photocont"><img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/11/h1-team-img-02.jpg" alt=""></div>
-          <div class="photocont textsec-6">
-             <h3>Aida Betul</h3>
-            <p>MAIN CONTRACTOR</p>
-            <div class="icons-sec6">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-            </div>
-          </div>
-          <div class="photocont linksec-6">
-               <a href="">jobs and internships</a>
-          </div>
-          <div class="photocont  textsec-6"></div>
-          <div class="photocont"><img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/11/h1-team-img-03.jpg" alt=""></div>
-          <div class="photocont">
-              <h3>Rebecca Wales</h3>
-            <p>CEO / ARCHITECT</p>
-            <div class="icons-sec6">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-            </div>
-          </div>
-          <div class="photocont"><img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/11/h1-team-img-04.jpg" alt=""></div>
-          <div class="photocont">
-             <h3>Guillermo Medici</h3>
-            <p>CEO / ARCHITECT</p>
-            <div class="icons-sec6">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-            </div>
-          </div>
+        <p>Since our inception, we have successfully connected numerous students with their dream jobs.</p>
       </div>
-    </section>
-    <section id="section-7">
-         <div class="textslides">
-            <div class="textslide">
-                <h3>Consuli norum eget magna. Quis varius quam quisque id. Amet justo donec <br>
-                     enim diam vulputate ut pharetra sit. Nunc eget lorem dolor phatera len.</h3>
-                <p>Miike Nicholson architect / M3 projects</p>
-            </div>
-            <div class="textslide">
-                 <h3>Lorem ipsum justo eget magna. Qui varius quam quisque id. Amet justo donec <br>
-                     enim diam vulputate ut pharetra sit. Nunc eget lorem nus sed mas.</h3>
-                <p>Anna Johnson Architect / green projects</p>
-            </div>
-            <div class="textslide">
-                 <h3>Integer vitae justo eget magna. Quis varius quam quisque id. Amet justo donec <br>
-                     enim diam vulputate ut pharetra sit. Nunc eget lorem dolor sed mas.</h3>
-                <p>- katja anderson ceo / green projects</p>
-            </div>
-         </div>
-    </section>
-    <section id="section-8">
-           <div class="gridsec-8">
-            <div class="sec8img-1 sec8img"><img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/blog-4.jpg" alt=""></div>
-            <div class="sec8text-1 sec8text">
-                <p>December 14, 2022 / interviews</p>
-                <h3>Studio Hiroshi Cuisine And Bar Innovative Interior Design</h3>
-            </div>
-            <div class="sec8img-2 sec8img"><img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/blog-3.jpg" alt=""></div>
-            <div class="sec8text-2 sec8text">
-                 <p>December 14, 2022 / interviews</p>
-                <h3>Zara Madid Speaking About Her Influence And Creative Vision</h3>
-            </div>
-            <div class="sec8img-3 sec8img"><img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/blog-2.jpg" alt=""></div>
-            <div class="sec8text-3 sec8text">
-                 <p>December 14, 2022 / interviews</p>
-                <h3>Zara Madid Speaking About Her Influence And Creative Vision</h3>
-            </div>
-            <div class="sec8img-4 sec8img"><img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/blog-1.jpg" alt=""></div>
-            <div class="sec8text-4 sec8text">
-                 <p>December 14, 2022 / interviews</p>
-                <h3>Coexisting With The Landscape Is The Main Rule</h3>
-            </div>
-           </div>
-    </section>
-    <section id="section-9">
-             <h2>Let’s make something beautiful together</h2>
-             <a href="">contact us</a>
-    </section>
-    <section id="section-10">
-         <div class="bottomnav">
-           <div class="insidenav">
-            <div class="insidecont-1">
-                <h2>Bridge</h2>
-                <span>Architects</span>
-            </div>
-            <div class="insidecont-2">
-                <div class="conttext">
-                    <span>social</span>
-                     <ul>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Behance</a></li>
-                        <li><a href="">Linkedin</a></li>
-                     </ul>
-                </div>
-                <div class="conttext">
-                      <span>Info</span>
-                     <ul>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Terms of service</a></li>
-                        <li><a href="">Studio</a></li>
-                     </ul>
-                </div>
-                <div class="conttext">
-                      <span>contact</span>
-                     <ul>
-                        <li><a href="">12 Terra Str, NY</a></li>
-                        <li><a href="">+585 889 9964</a></li>
-                        <li><a href="">bridge@example.com</a></li>
-                     </ul>
-                </div>
-            </div>
-           </div>
-         </div>
-         <div class="copyright">
-            <p>&copy;2026 <span>Sunny Pellakuri</span></p>
-         </div>
-    </section>
-  <script>
-const header = document.querySelector('header');
 
-window.addEventListener('scroll', () => {
-  const currentScroll = window.scrollY;
+      <div class="cont">
+        <div class="sideheading">
+          <span class="number">10</span>
+          <span class="name">workshops</span>
+        </div>
+        <p>We have conducted over 10 specialized workshops, equipping students with essential skills for the job market.</p>
+      </div>
 
-  if (currentScroll <= 30) {
-    header.classList.remove('nudged', 'scrolled');
-  } 
-  else if (currentScroll > 30 && currentScroll < 150) {
-    header.classList.add('nudged');
-    header.classList.remove('scrolled');
-  } 
-  else if (currentScroll >= 150) {
-    header.classList.add('scrolled');
-    header.classList.remove('nudged');
-  }
-});
-{
- const slidesContainer = document.querySelector('.bgslide');
-  const slides = document.querySelectorAll('.slideimages');
+      <div class="cont">
+        <div class="sideheading">
+          <span class="number">15</span>
+          <span class="name">partners</span>
+        </div>
+        <p>We proudly partner with over 10 colleges to enhance their training programs and placement opportunities.</p>
+      </div>
 
-  let index = 0;
-  const slideCount = slides.length;
-  const firstClone = slides[0].cloneNode(true);
-  slidesContainer.appendChild(firstClone);
+      <div class="cont">
+        <div class="sideheading">
+          <span class="number">500</span>
+          <span class="name">students</span>
+        </div>
+        <p>To date, we have supported more than 500 students in securing internships and job placements through our initiatives.</p>
+      </div>
+    </div>
 
-  function moveSlide() {
-    index++;
-    slidesContainer.style.transition = "transform 0.8s ease-in-out";
-    slidesContainer.style.transform = `translateX(-${index * 100}vw)`;
-    if (index === slideCount) {
-      setTimeout(() => {
-        slidesContainer.style.transition = "none";
-        slidesContainer.style.transform = "translateX(0)";
-        index = 0;
-      }, 800); 
-    }
-  }
-
-  setInterval(moveSlide, 4000); 
-}
-  </script>
-  <script>
-  const container = document.querySelector(".textslides");
-  const slides = document.querySelectorAll(".textslide");
-
-  let index = 0;
-  const total = slides.length;
-  const lastClone = slides[total - 1].cloneNode(true);
-  container.insertBefore(lastClone, slides[0]);
-
-  let slideWidth = window.innerWidth;
-  container.style.transform = `translateX(-${slideWidth}px)`;
-
-  function moveSlide() {
-    index++;
-    container.style.transition = "transform 0.8s ease-in-out";
-    container.style.transform =
-      `translateX(-${(index + 1) * slideWidth}px)`;
-
-    if (index === total - 1) {
-      setTimeout(() => {
-        container.style.transition = "none";
-        container.style.transform = `translateX(-${slideWidth}px)`;
-        index = 0;
-      }, 800);
-    }
-  }
-
-  setInterval(moveSlide, 4000);
-</script>
-
+    <div class="right">
+      <img
+        src="./Gemini_Generated_Image_bup7dubup7dubup7.png"
+        alt="Team working together in office."
+      />
+    </div>
+  </section>
 </body>
 </html>
