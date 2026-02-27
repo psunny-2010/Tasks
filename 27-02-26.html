@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>27-02-26</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+   
+    body {
+      background-color: #151519;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .sec1 {
+      padding: 0px 150px 0px 150px;
+      text-align: center;
+    }
+
+    .testimonials {
+      font-size: 14px;
+      color: white;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .reviews {
+      font-size: 40px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+      color: #fff;
+    }
+
+    .reviews span {
+      color: orange;
+    }
+
+    .cardscont {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 160px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background-color: #242631;
+      border: 1.5px solid #3c3f5d;
+      border-radius: 4px;
+      padding: 28px;
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+      height: 210px;
+    }
+
+    .name {
+      font-size: 15px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .stars {
+      color: #f97316;
+      letter-spacing: 3px;
+      margin-bottom: 18px;
+    }
+     .fa-solid{
+      font-size: 10px !important;
+
+     }
+    .info {
+      font-size: 15px;
+      line-height: 1.6;
+      color: white;
+      position: relative;
+      z-index: 1;
+    }
+
+    .quotes {
+      position: absolute;
+      bottom: -10px;
+      right: 10px;
+      font-size: 160px;
+      font-weight: 900;
+      color: #2e3257;
+      line-height: 1;
+      font-family: Georgia, serif;
+    }
+
+    .discs {
+      display: flex;
+      justify-content: center;
+      gap: 11px;
+      margin-bottom: 30px;
+      margin-top: 80px;
+    }
+
+    .disc {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #454545;
+      cursor: pointer;
+      border: none;
+    }
+
+    .disc.active {
+      background-color: #fff;
+    }
+    .sec2 {
+      padding: 0 50px 0px 50px;
+      text-align: center;
+    }
+
+    .sec2 .sub {
+      font-size: 14px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .sec2 h2 {
+      font-size: 40px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .sec2 h2 span {
+      color: orange;
+    }
+
+    @media (max-width: 900px) {
+      .cardscont {
+        grid-template-columns: 1fr;
+      }
+
+      .sec1,
+      .cont3 {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sec1">
+    <p class="testimonials">Testimonials</p>
+    <h2 class="reviews">OUR CLIENTS <span>REVIEWS</span></h2>
+
+    <div class="cardscont">
+
+      <div class="card">
+        <p class="name">Anjali Sharma</p>
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="info">Oppty's e-commerce platform increased our online sales by 45% in just three months!</p>
+        <div class="quotes">"</div>
+      </div>
+      <div class="card">
+        <p class="name">Rohan Patel, Tech Entrepreneur</p>
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="info">Their AI-driven solutions optimized our workflows, saving us significant costs</p>
+        <div class="quotes">"</div>
+      </div>
+      <div class="card">
+        <p class="name">Priyanka Reddy, Marketing Head</p>
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="info">The responsive website Oppty built for us perfectly captures our brand's essence</p>
+        <div class="quotes">"</div>
+      </div>
+
+    </div>
+    <div class="discs">
+      <button class="disc"></button>
+      <button class="disc active"></button>
+      <button class="disc"></button>
+      <button class="disc"></button>
+    </div>
+  </div>
+  <div class="sec2">
+    <p class="sub">We are proud to partner with industry leaders.</p>
+    <h2>OUR VALUED <span>CLIENTS</span></h2>
+  </div>
+
+</body>
+</html>
