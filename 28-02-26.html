@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>28-02-26</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family:sans-serif;
+      background: linear-gradient(135deg, #dce8f5 0%, #f5e8dc 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 60px;
+      margin: 0 auto;
+      padding: 0px 50px 0px 50px;
+      width: 100%;
+    }
+
+    .cont1 h1 {
+      font-size: 38px;
+      font-weight: 900;
+      color: #111;
+      line-height: 1.25;
+      margin-bottom: 28px;
+      margin-top: 70px;
+    }
+
+    .cont1 p {
+      font-size: 14px;
+      line-height: 1.75;
+      color: #3b3b3b;
+    }
+
+  
+    .cont2 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: 50px 130px 1fr;
+      align-items: center;
+      gap: 24px;
+      padding: 28px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.12);
+    }
+
+    .card:last-child {
+      border-bottom: none;
+    }
+
+    .number {
+      font-size: 18px;
+      font-weight: 700;
+      color: orange;
+    }
+
+    .img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img img {
+      width: 110px;
+      height: 110px;
+      object-fit: contain;
+    }
+
+    .info h3 {
+      font-size: 18px;
+      font-weight: 800;
+      color: #111;
+      margin-bottom: 8px;
+    }
+
+    .info p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+    }
+    @media (max-width: 860px) {
+      .container {
+        grid-template-columns: 1fr;
+        padding: 40px 24px;
+      }
+
+      .card {
+        grid-template-columns: 40px 100px 1fr;
+        gap: 16px;
+      }
+    }
+ </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="cont1">
+      <h1>Our Commitment to Excellence</h1>
+      <p>
+        Oppty TechHub is a trailblazer in delivering innovative, client-centric
+        solutions that redefine business success in the digital era. From cutting-edge
+        IT services and AI-driven automation to seamless BPO, e-commerce, and web
+        development, we empower organizations to thrive in a competitive landscape.
+        Through our sub-brand, ProCareer.tech, we bridge the gap between academia
+        and industry by equipping students with essential skills and connecting top
+        talent with leading companies across India. Our unwavering commitment to
+        excellence, collaboration, and integrity ensures we create lasting partnerships,
+        driving sustainable growth and transformative outcomes for businesses and
+        individuals alike.
+      </p>
+    </div>
+    <div class="cont2">
+
+      <div class="card">
+        <span class="number">#1</span>
+        <div class="img">
+          <img
+            src="./media/award-img-01.png"
+            alt="Technology Innovation Award trophy"
+              style=" width:140px; height:140px;"
+          />
+        </div>
+        <div class="info">
+          <h3>Technology Innovation Award</h3>
+          <p>Oppty TechHub was awarded for pioneering AI and IT solutions, driving digital transformation.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="number">#2</span>
+        <div class="img">
+          <img
+            src="./media/image-removebg-preview.png"
+            alt="BPO Excellence Recognition award"
+          style=" width:140px; height:140px; margin-left: -15px; " />
+        </div>
+        <div class="info">
+          <h3>BPO Excellence Recognition</h3>
+          <p>We earned praise for efficient, client-focused BPO services that boost productivity.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="number">#3</span>
+        <div class="img">
+          <img
+            src="./media/award-img-03.png"
+            alt="E-commerce Leadership Award"
+          />
+        </div>
+        <div class="info">
+          <h3>E-commerce Leadership Award</h3>
+          <p>Our innovative e-commerce platforms were recognized for fueling online business growth.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
