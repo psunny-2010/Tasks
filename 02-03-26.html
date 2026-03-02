@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02-03-26</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #fff;
+      color: #111;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      min-height: 100vh;
+    }
+    .cont1 {
+      position: relative;
+      background-color: rgb(236, 238, 240);
+    }
+    .leftcont{
+      height: 100%;
+      width: 98%;
+      background-color: white;
+      margin-left: 2%; 
+    }
+    .vtext1{
+      width: 70px;
+      height: 350px;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transform: rotate(180deg);
+      font-size: 37px;
+       font-weight: 400;
+      position: absolute;
+      display: flex;
+      align-items: flex-end;
+      margin-top: 270px;
+       color: #2563eb;
+       padding: 0;
+       margin-left: -5px;
+    }
+    .heading {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .flag {
+     height: 40px;
+     width: 70px;
+     margin-left: 5px;
+    }
+    .flag img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .htext {
+      font-size: 40px;
+      font-weight: 400;
+      color: #111;
+      padding: 0;
+    }
+
+    .info {
+      font-size: 29px;
+      color: #111;
+      font-weight: 380;
+      margin-bottom: 10px;
+      margin-left: 70px;
+      padding-left: 5px;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    .mainimage {
+      width: 740px;
+      height: 410px;
+      object-fit: cover;
+      border-radius: 4px;
+       margin-left: 70px;
+       margin-bottom: 15px;
+    }
+
+    .para {
+      font-size: 24px;
+      line-height: 1.3;
+      color: #333;
+       margin-left: 70px;
+       margin-bottom: 15px;
+    }
+
+    .readmore {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #111;
+      text-decoration: none;
+      text-transform: uppercase;
+       margin-left: 70px;
+    }
+
+    .readmore:hover {
+      color: #2563eb;
+    }
+
+   .arrow {
+      font-size: 20px;
+    }
+    .cont2 {
+      display: flex; 
+      
+    }
+    .flag-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      height: 4.25%;
+      width: 50px;
+    }
+    .flag-cell img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .verticalsection {
+      display: flex;
+      flex: 1;
+       background-color: rgb(236, 238, 240);
+    }
+
+    .verticalcolumns {
+      flex: 1;
+      height: 90%;
+      margin: auto 0;
+      flex-direction: column;
+      border-right: 1px solid #cbc9c9;
+      display: flex;
+      align-items: center;
+      padding: 0px 10px;
+      cursor: pointer;
+    }
+
+    .verticalcolumns:last-child {
+      border-right: none;
+    }
+
+    .verticalcolumns:hover .col-text {
+      color: #1e40af;
+    }
+
+    .vtext2 {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 37px;
+      font-weight: lighter;
+      color: #2563eb;
+      line-height: 1.3;
+      font-weight: 400;
+      height: 95.75%;
+      display: flex ;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="main">
+  <div class="cont1">
+   <div class="leftcont">
+       <span class="vtext1">Women in healthcare</span>
+
+    <div class="heading">
+      <span class="flag"><img src="data:image/png;base64,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" alt=""></span>
+      <h1 class="htext">Women in healthcare</h1>
+    </div>
+
+    <p class="info">Thursday, March 5, 2026 &nbsp;|&nbsp; LinkedIn Live</p>
+
+    <img
+      src="./media/women-in-healthcare-steering-ai-enabled-care-ecosystem-web.jpg"
+      alt="Two women doctors in white coats looking at a tablet"
+      class="mainimage"
+    />
+
+    <p class="para">
+      Our healthcare and life sciences forum will see women leaders <br> discussing AI in healthcare, transforming healthcare, and impacting <br>
+      lives with innovation and tech.
+    </p>
+
+    <a href="#" class="readmore">
+      READ MORE <span class="arrow">-></span>
+    </a>
+
+   </div>
+  </div>
+  <div class="cont2">
+    <div class="verticalsection">
+
+      <div class="verticalcolumns">
+         <div class="flag-cell">
+          <img src="data:image/png;base64,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" alt="">
+         </div>
+        <span class="vtext2">SAP A&D Innovation Days' 26</span>
+      </div>
+
+      <div class="verticalcolumns">
+         <div class="flag-cell">  <img src="./media/be flag.jpg" alt=""></div>
+        <span class="vtext2">TCS at Leaders in Logistics</span>
+      </div>
+
+      <div class="verticalcolumns">
+         <div class="flag-cell">  <img src="data:image/png;base64,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" alt=""></div>
+        <span class="vtext2">TCS at NVIDIA GTC 2026</span>
+      </div>
+
+      <div class="verticalcolumns">
+         <div class="flag-cell">  <img src="data:image/png;base64,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" alt=""></div>
+        <span class="vtext2">TCS at SSOW Conference 2026</span>
+      </div>
+
+      <div class="verticalcolumns">
+         <div class="flag-cell">  <img src="data:image/png;base64,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" alt=""></div>
+        <span class="vtext2">TCS Life Sciences Forum</span>
+      </div>
+
+      <div class="verticalcolumns">
+         <div class="flag-cell">  <img src="data:image/png;base64,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" alt=""></div>
+        <span class="vtext2">TCS at Adobe Summit 2026</span>
+      </div>
+
+      <div class="verticalcolumns">
+         <div class="flag-cell">  <img src="data:image/png;base64,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" alt=""></div>
+        <span class="vtext2">TCS at Google Cloud Next</span>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
