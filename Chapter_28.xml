@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE book-part >
+<book-part>
+<book-part-meta>
+<title-group>
+<label>28</label>
+<title>Quantum Physics and Special Relativity</title>
+</title-group>
+</book-part-meta>
+<body>
+<p>In this final chapter we propose to see how special relativity is taken into account in quantum physics.We do not
+ address general relativity, spacetime curvature as a manifestation of gravitation, as this is currently a separate and
+ incompatible theory, though both general relativity and quantum physics are extremely efficient in their own field. We
+ have already mentioned some effects that special relativity has in quantum physics. For instance, we have seen that
+ the Schrödinger analysis of the hydrogen atom gives an expected electron velocity in the ground state of the atom of
+ the order of (see Chapter 20), coinciding with the prediction of Bohr’s model (see Chapter 2). If 1, this expected value
+ is not negligible with respect and thus we can expect significant changes of the energy levels, especially for the
+ innermost electronic orbitals. Moreover, we know that the <bold>fine structure</bold> of atomic spectra is a relativistic effect
+ through the relationship between the energy and the linear momentum (the norm of the momenergy) and the spin
+ –orbit coupling (see Chapter 20).
+ </p>
+ <p>
+ We propose here to give a theoretical framework for joining quantum physics and special relativity. At
+ the beginning, this was accomplished with just a simple extension of the non-relativistic form of quantum physics by 
+ taking into account the Lorentzian geometry of spacetime (equivalently by considering the Lorentz–Poincar&#233;
+ transformation), that is, by unifying space and time. This occurred historically in two ways:
+ </p>
+ <p>
+ The second was proposed by Dirac in 1928 for electrons.3 It is based on the introduction of a new 
+ Hamiltonian in which the spatial derivatives are of the first order, like those relative to time.
+ </p>
+ <p>
+ because of some difficulties and shortcomings, the Dirac theory has been replaced by a new construction we now call 
+ quantum electrodynamics, and which is an example of what we call more generally a <italic>quantum field theory</italic>.
+ </p>
+ <sec disp-level="A" id="sec28_1">
+<title>THE SCHR&#x00f6;DINGER–KLEIN–GORDON (SKG) EQUATION</title>
+<p><bold>The Schr&#x00f6;dinger–Klein–Gordon equation</bold> concerns only <italic>spinless</italic> physical objects, like the meson, and, by 
+ extension, any situation where the spin does not play an important role. This is the case, for instance, in electronic
+ microscopy: the spin of the incident fast electrons can be ignored provided that the magnetic interaction with the
+ sample investigated is negligible or null.</p>
+ <fig id="fig28_1" position="float">
+ <figcaption>
+ <p><bold>Figure 28.1</bold> Dispersion curves for a free fermion in Dirac’s theory. The vertices of the parabola are <italic><bold>mc</bold></italic><sub>2</sub>
+ (positive energies).
+ </p>
+ </figcaption>
+ <image href="44759fig26_1.png" mime-subtype="png"/>
+ </fig>
+ <sec disp-level="B" id="sec28_1_1">
+ <title>Spin</title>
+ <p>Dirac interpreted this degeneracy by assigning to a free electron <italic>two</italic> different values of a new quantity, the <italic>spin</italic>. It
+ thus appears independently of the presence of any magnetic field, unlike what we might think from its introduction
+ from experimental considerations, via the proper magnetic momentum of the electron (see Chapter 13).
+ </p>
+ </sec>
+</sec>
+</body>
+</book-part>
